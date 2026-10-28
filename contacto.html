@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Redacta y copia una propuesta para Change Lab. Un buzón de ideas local y un espacio para conocer futuras formas de participar.">
+  <meta name="theme-color" content="#F7F7F5">
+  <title>Contacto — Change Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Outfit:wght@800;900&amp;family=Space+Mono:wght@400&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/contact.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Change Lab — Inicio">change lab<span class="brand__dot" aria-hidden="true">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacion" hidden>Menú <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <nav class="site-nav" id="navegacion" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="problematicas.html">Problemáticas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="reflexiona.html">Reflexiona</a>
+        <a href="contacto.html" aria-current="page">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main class="contact" id="contenido" tabindex="-1">
+    <section class="surface--dark section-shell contact-hero" aria-labelledby="page-title"><div class="container contact-hero__layout"><div><p class="eyebrow">CHANGE LAB / CONECTEMOS</p><h1 id="page-title">Las buenas ideas empiezan con una <span>conversación.</span></h1><p class="contact-lead">¿Hay alguna problemática que te gustaría que abordáramos? Queremos conocer nuevas perspectivas y seguir ampliando nuestras historias.</p></div>
+      <div class="contact-collage" aria-hidden="true"><svg viewBox="0 0 440 480" focusable="false"><path d="m69 59 285 37-44 319-278-36Z" fill="var(--fog)"/><path d="m121 45 260 59-68 302-254-53Z" fill="var(--off-white)"/><path d="M38 142h248v142H133l-55 39v-39H38Z" fill="var(--blue)" stroke="var(--ink)" stroke-width="2"/><path d="m192 233 201-9 7 125-39 3 4 33-50-30-117 7Z" fill="var(--charcoal)" stroke="var(--ink)" stroke-width="2"/><path d="M75 184h139m-139 22h99m-99 22h116" stroke="var(--ink)" stroke-width="3"/><g fill="var(--off-white)"><circle cx="245" cy="294" r="8"/><circle cx="285" cy="292" r="8"/><circle cx="325" cy="290" r="8"/></g><path d="m320 42 8 24 26 9-26 9-8 25-9-25-24-9 24-9Z" fill="var(--blue)"/><path d="m52 358-26 16m42-5-1 34m290-15 36 13" stroke="var(--blue)" stroke-width="3"/></svg><span class="label contact-collage__note">UNA IDEA / MUCHOS ÁNGULOS</span></div>
+    </div></section>
+
+    <section class="surface--blue section-shell contact-mailbox" id="buzon" aria-labelledby="mailbox-title"><div class="container contact-mailbox__layout"><div><p class="eyebrow">BUZÓN DE IDEAS / 001</p><h2 id="mailbox-title">¿De qué deberíamos hablar después?</h2><p class="contact-section-copy">Cada realidad merece ser escuchada. Piensa en una problemática social que consideres importante y comparte una propuesta para explorarla en Change Lab.</p><p class="contact-mailbox__explanation">Este espacio te ayuda a redactar y copiar tu idea. No envía propuestas al equipo ni registra el borrador.</p></div>
+      <div class="idea-composer" data-idea-mailbox>
+        <p class="label idea-composer__label">BORRADOR / SOLO EN TU DISPOSITIVO</p>
+        <label for="idea-category">Categoría <span class="idea-optional">(opcional)</span></label>
+        <select id="idea-category" data-idea-category><option value="">Sin categoría</option><option>Sociedad y comunidad</option><option>Medio ambiente</option><option>Entorno digital</option><option>Otra temática</option></select>
+        <label for="idea-text">Tu propuesta</label>
+        <p class="idea-help" id="idea-help">Describe una problemática o sugiere una frutinovela. Máximo 500 caracteres.</p>
+        <textarea id="idea-text" data-idea-text rows="7" maxlength="500" aria-describedby="idea-help idea-privacy idea-count" placeholder="¿Qué realidad merece una nueva historia?" autocomplete="off"></textarea>
+        <div class="idea-meta"><p class="idea-help" id="idea-privacy">Evita incluir nombres, correos, teléfonos u otros datos personales.</p><output id="idea-count" data-idea-count for="idea-text" aria-live="off">Máximo 500 caracteres</output></div>
+        <p class="idea-no-script" data-idea-fallback>Puedes redactar aquí y copiar manualmente tu texto. Los botones y el contador se activan con JavaScript.</p>
+        <div class="idea-tools"><button type="button" class="button" data-idea-copy disabled>Copiar mi propuesta</button><button type="button" class="button button--secondary" data-idea-clear disabled>Borrar</button></div>
+        <p class="idea-status" data-idea-status role="status" aria-live="polite" aria-atomic="true"></p>
+        <p class="idea-limit-announcement" data-idea-limit role="status" aria-live="polite" aria-atomic="true"></p>
+      </div>
+    </div></section>
+
+    <section class="container section-shell contact-channels" aria-labelledby="channels-title"><div class="contact-channels__layout"><div><p class="eyebrow">02 / CONTACTA AL EQUIPO</p><h2 id="channels-title">Conectemos ideas.</h2><p class="contact-section-copy">Change Lab es una iniciativa estudiantil abierta a nuevas perspectivas, sugerencias y propuestas educativas.</p></div><div class="official-channels" data-contact-channels><p class="label">CANALES OFICIALES</p><p data-channels-pending>Nuestros canales oficiales estarán disponibles próximamente.</p><ul class="official-channels__list" data-channels-list hidden></ul></div></div>
+      <div class="contact-participate"><p class="label">FORMAS DE PARTICIPAR</p><ul><li><span class="label" aria-hidden="true">01 /</span><p>Propón una temática para una nueva historia.</p></li><li><span class="label" aria-hidden="true">02 /</span><p>Comparte una perspectiva o sugerencia educativa.</p></li><li><span class="label" aria-hidden="true">03 /</span><p>Explora las frutinovelas y abre una conversación.</p></li></ul></div>
+    </section>
+
+    <section class="surface--fog section-shell contact-team" aria-labelledby="team-title"><div class="container contact-team__layout"><div><p class="eyebrow">DETRÁS DE CHANGE LAB</p><h2 id="team-title">The Nebula Society<span>.</span></h2></div><div><p>Somos un equipo estudiantil que utiliza las habilidades desarrolladas en el taller de computación para crear contenido audiovisual y experiencias digitales que inviten a reflexionar sobre diferentes problemáticas sociales.</p><a class="button" href="sobre-nosotros.html">Conoce nuestro equipo <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div></div></section>
+
+    <section class="surface--dark section-shell contact-closing" aria-labelledby="closing-title"><div class="container"><p class="eyebrow">EL SIGUIENTE DIÁLOGO</p><h2 id="closing-title">Una idea puede abrir muchas <span>perspectivas.</span></h2><div class="contact-closing__bottom"><p>Explora las historias de Change Lab y descubre cómo la información puede inspirar nuevas formas de pensar.</p><a class="button button--primary" href="problematicas.html">Explorar historias <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div></div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Change Lab — Desarrollado por The Nebula Society</p>
+      <p class="footer-note">Explora. Reflexiona. Actúa.</p>
+    </div>
+    <div class="institution-credit"><div class="container institution-credit__inner"><img src="assets/images/identidad/logo-fya-web.webp" width="800" height="800" loading="lazy" decoding="async" alt="Fe y Alegría N.º 2"><p>Proyecto desarrollado en el taller de computación de Fe y Alegría N.º 2.</p></div></div>
+  </footer>
+</body>
+</html>
+
+

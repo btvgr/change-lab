@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plantilla de autoría de páginas de frutinovelas de Change Lab.">
+  <meta name="theme-color" content="#F7F7F5">
+  <title>Título del episodio — Change Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Outfit:wght@800;900&amp;family=Space+Mono:wght@400&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/episode.css">
+  <script type="module" src="../js/main.js"></script>
+  <script type="module" src="../js/episode.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Change Lab — Inicio">change lab<span class="brand__dot" aria-hidden="true">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacion" hidden>Menú <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <nav class="site-nav" id="navegacion" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../problematicas.html" aria-current="location">Problemáticas</a>
+        <a href="../recursos.html">Recursos</a>
+        <a href="../reflexiona.html">Reflexiona</a>
+        <a href="../contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main class="episode" id="contenido" tabindex="-1" data-episode="nuevo-tema">
+    <section class="container episode-hero" aria-labelledby="page-title">
+      <!-- PLANTILLA DE AUTORÍA: copiar a temas/<slug>.html y completar antes de enlazar. -->
+      <a class="text-link episode-back" href="../problematicas.html">← Volver al archivo social</a>
+      <div class="episode-hero__meta"><p class="eyebrow">CHANGE LAB / FRUTINOVELA 000</p><p class="label">CATEGORÍA DEL TEMA</p></div>
+      <h1 id="page-title" data-episode-title>Titular de la página</h1>
+      <p class="episode-story-name">Frutinovela: <span data-story-title>Título del episodio</span> <span class="label episode-provisional" data-provisional-title>Título provisional</span></p>
+      <p class="episode-lead">Escribe aquí el subtítulo aprobado de la nueva frutinovela.</p>
+      <div class="episode-hero__rule label"><span>TEMA DEL EPISODIO</span><span>FICCIÓN PARA REFLEXIONAR / 000</span></div>
+    </section>
+
+    <section class="surface--dark section-shell episode-screen" aria-labelledby="screen-title">
+      <div class="container episode-screen__layout">
+        <div class="episode-screen__copy"><p class="eyebrow">01 / LA HISTORIA</p><h2 id="screen-title">Una historia.<br>Distintas decisiones.</h2><p>Una frutinovela es un video corto dramatizado: una historia de ficción para reflexionar sobre situaciones y decisiones vinculadas a una problemática social.</p><p class="label episode-screen__note">FORMATO VERTICAL / 9:16<br>Sin reproducción automática</p></div>
+        <div class="episode-media" data-episode-media>
+          <div class="episode-media__frame">
+            <div class="episode-production" data-media-placeholder>
+              <div class="episode-production__art" aria-hidden="true"><span>000</span><i></i><b>9:16</b></div>
+              <p class="label">CHANGE LAB / FRUTINOVELA</p>
+              <p class="episode-production__status" data-media-status role="status" aria-live="polite">Frutinovela en producción</p>
+              <p>Estamos preparando esta historia.</p>
+            </div>
+            <video id="frutinovela" preload="none" playsinline width="720" height="1280" aria-label="Frutinovela: Título del episodio" hidden>Tu navegador no admite video HTML5.</video>
+          </div>
+          <p class="episode-media__caption">Una historia de ficción para reflexionar.</p>
+          <a class="text-link episode-transcript" data-media-transcript hidden>Leer la transcripción de la frutinovela</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-shell episode-context" aria-labelledby="context-title">
+      <header class="episode-section-heading"><p class="eyebrow">02 / DETRÁS DE LA HISTORIA</p><h2 id="context-title">Más allá de la pantalla.</h2></header>
+      <div class="episode-context__grid">
+        <article class="episode-context__item"><span class="label" aria-hidden="true">01 / COMPRENDER</span><h3>Comprender el tema</h3><p>Incorpora aquí una explicación breve revisada para esta problemática.</p></article>
+        <article class="episode-context__item"><span class="label" aria-hidden="true">02 / RECONOCER</span><h3>Factores a considerar</h3><p>Incorpora aquí información contextual revisada, sin estigmatizar a las personas.</p></article>
+        <article class="episode-context__item"><span class="label" aria-hidden="true">03 / ACOMPAÑAR</span><h3>Prevención y apoyo</h3><p>Incorpora aquí alternativas educativas y de apoyo pertinentes al tema.</p></article>
+      </div>
+    </section>
+
+    <section class="surface--fog section-shell episode-reflect" aria-labelledby="quiz-title">
+      <div class="container" data-quiz>
+        <header class="episode-section-heading"><p class="eyebrow">03 / REFLEXIONA</p><h2 id="quiz-title">¿Qué harías tú?</h2><p>Elige una opción y comprueba tu respuesta. Puedes cambiarla y volver a intentarlo.</p><p class="episode-quiz-note">Esta actividad invita a reflexionar; no mide tu conciencia social. Tus respuestas no se guardan.</p></header>
+        <div class="episode-quiz-fallback" data-quiz-fallback><p>Añade las preguntas aprobadas en episodes-data.js y escribe aquí una alternativa de reflexión sin JavaScript.</p></div>
+        <div class="episode-quiz" data-quiz-cards></div>
+        <div class="episode-quiz-bottom"><button class="button" type="button" data-quiz-reset hidden>Volver a intentarlo</button><p class="episode-quiz-status" data-quiz-status role="status" aria-live="polite" aria-atomic="true"></p></div>
+      </div>
+    </section>
+
+    <section class="container section-shell episode-next" aria-labelledby="next-title">
+      <header class="episode-section-heading"><p class="eyebrow">04 / SIGUE EXPLORANDO</p><h2 id="next-title">Cada historia muestra una realidad diferente.</h2></header>
+      <div class="episode-next__grid">
+        <article class="card episode-next__card"><p class="label">002 / CONSUMO Y MEDIO AMBIENTE</p><h3 class="card__title">Fast fashion</h3><p class="label episode-next__pending">Próximamente</p></article>
+        <article class="card episode-next__card"><p class="label">003 / CONVIVENCIA DIGITAL</p><h3 class="card__title">Ciberacoso</h3><p class="label episode-next__pending">Próximamente</p></article>
+      </div>
+      <a class="button button--primary" href="../problematicas.html">Volver a Problemáticas <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Change Lab — Desarrollado por The Nebula Society</p>
+      <p class="footer-note">Explora. Reflexiona. Actúa.</p>
+    </div>
+    <div class="institution-credit"><div class="container institution-credit__inner"><img src="../assets/images/identidad/logo-fya-web.webp" width="800" height="800" loading="lazy" decoding="async" alt="Fe y Alegría N.º 2"><p>Proyecto desarrollado en el taller de computación de Fe y Alegría N.º 2.</p></div></div>
+  </footer>
+</body>
+</html>
+
+
+
+
+

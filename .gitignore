@@ -1,0 +1,22 @@
+# Master local preservado. La copia fast-fashion-web.mp4 SI se publica.
+/assets/videos/fast-fashion.mp4.mp4
+
+# Capturas locales de QA; no son imagenes necesarias para el sitio.
+/qa/*.png
+
+# Configuracion local, credenciales y archivos temporales.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+/.private/
+/.local/
+/.vscode/
+node_modules/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+desktop.ini

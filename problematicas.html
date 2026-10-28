@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explora el archivo social de Change Lab: pandillaje, fast fashion y ciberacoso. Busca por tema o palabra clave y descubre nuevas perspectivas.">
+  <meta name="theme-color" content="#F7F7F5">
+  <title>Problemáticas — Change Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Outfit:wght@800;900&amp;family=Space+Mono:wght@400&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/topics.css">
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/topics.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Change Lab — Inicio">change lab<span class="brand__dot" aria-hidden="true">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacion" hidden>Menú <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <nav class="site-nav" id="navegacion" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="problematicas.html" aria-current="page">Problemáticas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="reflexiona.html">Reflexiona</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main class="archive" id="contenido" tabindex="-1">
+    <section class="surface--dark section-shell archive-cover" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow">CHANGE LAB / ARCHIVO SOCIAL</p>
+        <div class="archive-cover__layout">
+          <h1 id="page-title">Realidades que merecen ser <span>contadas.</span></h1>
+          <div class="archive-cover__side">
+            <div class="archive-cover__graphic" aria-hidden="true"><span>CL /</span><span>001—003</span></div>
+            <p>Explora las historias detrás de los problemas que afectan nuestra sociedad. Cada tema es una oportunidad para aprender, cuestionar y descubrir nuevas perspectivas.</p>
+          </div>
+        </div>
+        <a class="archive-cover__jump label" href="#explorador">ABRIR EL ARCHIVO <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a>
+      </div>
+    </section>
+
+    <section class="section-shell archive-explorer" id="explorador" aria-labelledby="explorer-title">
+      <div class="container">
+        <header class="archive-explorer__heading"><p class="eyebrow">ÍNDICE / TEMÁTICAS</p><h2 id="explorer-title">Explora las problemáticas.</h2></header>
+        <div id="archive-controls" class="archive-controls" hidden>
+          <div class="archive-search">
+            <label for="topic-search">Buscar por título o palabra clave</label>
+            <div class="archive-search__field"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg><input type="search" id="topic-search" placeholder="Prueba con moda, comunidad o internet" autocomplete="off" spellcheck="false" aria-controls="archive-grid" aria-describedby="search-help"></div>
+            <p id="search-help" class="archive-help">Combina palabras clave y categoría para encontrar un tema.</p>
+          </div>
+          <fieldset class="archive-filters"><legend class="label">Filtrar por categoría</legend><div class="archive-filters__buttons">
+            <button type="button" data-category="Todos" aria-pressed="true" aria-controls="archive-grid">Todos</button>
+            <button type="button" data-category="Sociedad" aria-pressed="false" aria-controls="archive-grid">Sociedad</button>
+            <button type="button" data-category="Medio ambiente" aria-pressed="false" aria-controls="archive-grid">Medio ambiente</button>
+            <button type="button" data-category="Entorno digital" aria-pressed="false" aria-controls="archive-grid">Entorno digital</button>
+          </div></fieldset>
+          <button type="button" id="archive-reset" class="archive-reset" disabled>Restablecer búsqueda y filtros</button>
+        </div>
+        <p class="archive-basic" id="archive-basic">Explora las tres páginas de contexto y reflexión. Sus frutinovelas están en producción.</p>
+        <div class="archive-results-bar"><span class="label">ARCHIVO AUDIOVISUAL</span><p class="label" id="archive-status" role="status" aria-live="polite" aria-atomic="true">3 temas</p></div>
+        <div class="archive-grid" id="archive-grid">
+          <article class="card archive-card" aria-labelledby="fallback-pandillaje">
+            <div class="archive-art" data-art="pandillaje" aria-hidden="true"><span class="archive-art__shape"></span><span class="archive-art__number">001</span><span class="label archive-art__caption">Archivo visual / 001</span></div>
+            <div class="archive-card__body"><p class="label">Sociedad y comunidad</p><h3 class="card__title" id="fallback-pandillaje">Pandillaje</h3><p class="card__description">Comprende los factores que influyen en el pandillaje juvenil, sus consecuencias y la importancia de crear oportunidades de prevención y apoyo comunitario.</p><a class="text-link archive-card__link" href="temas/pandillaje.html">Explorar Pandillaje ↗</a></div>
+          </article>
+          <article class="card archive-card" aria-labelledby="fallback-fashion">
+            <div class="archive-art" data-art="fast-fashion" aria-hidden="true"><span class="archive-art__shape"></span><span class="archive-art__number">002</span><span class="label archive-art__caption">Archivo visual / 002</span></div>
+            <div class="archive-card__body"><p class="label">Consumo y medio ambiente</p><h3 class="card__title" id="fallback-fashion">Fast fashion</h3><p class="card__description">Descubre cómo la producción y el consumo acelerado de ropa influyen en el medio ambiente y en las condiciones laborales.</p><a class="text-link archive-card__link" href="temas/fast-fashion.html">Explorar Fast fashion ↗</a></div>
+          </article>
+          <article class="card archive-card" aria-labelledby="fallback-ciberacoso">
+            <div class="archive-art" data-art="ciberacoso" aria-hidden="true"><span class="archive-art__shape"></span><span class="archive-art__number">003</span><span class="label archive-art__caption">Archivo visual / 003</span></div>
+            <div class="archive-card__body"><p class="label">Convivencia digital</p><h3 class="card__title" id="fallback-ciberacoso">Ciberacoso</h3><p class="card__description">Aprende a reconocer las conductas de acoso en internet, comprender sus consecuencias y promover espacios digitales más seguros.</p><a class="text-link archive-card__link" href="temas/ciberacoso.html">Explorar Ciberacoso ↗</a></div>
+          </article>
+        </div>
+        <div class="archive-empty" id="archive-empty" hidden><span class="archive-empty__symbol" aria-hidden="true">∅</span><p>No encontramos temas que coincidan con tu búsqueda.</p><p class="archive-help">Prueba otra palabra, cambia de categoría o restablece los filtros.</p></div>
+      </div>
+    </section>
+
+    <section class="surface--blue section-shell archive-reflection" aria-labelledby="reflection-title">
+      <div class="container archive-reflection__layout">
+        <div><p class="eyebrow">MIRAR / COMPRENDER / CUESTIONAR</p><h2 id="reflection-title">Cada historia abre una nueva perspectiva.</h2></div>
+        <div><p>Informarnos nos permite comprender mejor nuestro entorno y reconocer que nuestras decisiones también pueden generar un impacto.</p><a class="button" href="sobre-nosotros.html">Conoce Change Lab <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Change Lab — Desarrollado por The Nebula Society</p>
+      <p class="footer-note">Explora. Reflexiona. Actúa.</p>
+    </div>
+    <div class="institution-credit"><div class="container institution-credit__inner"><img src="assets/images/identidad/logo-fya-web.webp" width="800" height="800" loading="lazy" decoding="async" alt="Fe y Alegría N.º 2"><p>Proyecto desarrollado en el taller de computación de Fe y Alegría N.º 2.</p></div></div>
+  </footer>
+</body>
+</html>
+
+
+
+

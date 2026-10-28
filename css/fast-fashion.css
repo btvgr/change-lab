@@ -1,0 +1,71 @@
+﻿/* Solo episodio 002. Reutiliza la identidad y los componentes del reproductor. */
+.episode[data-episode=fast-fashion] .episode-cast { border-bottom: 1px solid var(--color-border); }
+.episode[data-episode=fast-fashion] .episode-cast__grid { display: grid; gap: var(--space-3); }
+.episode[data-episode=fast-fashion] .character-card { min-width: 0; padding: 0; border-radius: 0; overflow: hidden; }
+.episode[data-episode=fast-fashion] .character-portrait { position: relative; isolation: isolate; aspect-ratio: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; gap: var(--space-3); padding: var(--space-3); background: var(--fog); color: var(--ink); }
+.episode[data-episode=fast-fashion] .character-portrait::before { content: ''; position: absolute; z-index: -1; inset: 20% -10% 24% 48%; transform: rotate(-15deg); background: var(--blue); border: 1px solid var(--ink); }
+.episode[data-episode=fast-fashion] .character-card:nth-child(even) .character-portrait::before { inset: 12% 18% 30% 38%; background: var(--off-white); transform: rotate(12deg); }
+.episode[data-episode=fast-fashion] .character-portrait__number { font-family: var(--font-display); font-size: clamp(3rem, 6vw, 5rem); line-height: 1; font-weight: 900; letter-spacing: -.06em; }
+.episode[data-episode=fast-fashion] .character-portrait > .label { font-size: .6875rem; padding: .3rem .5rem; background: var(--off-white); }
+.episode[data-episode=fast-fashion] .character-portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.episode[data-episode=fast-fashion] .character-card__body { padding: var(--space-3); }
+.episode[data-episode=fast-fashion] .character-card__body p { font-size: 1rem; }
+@media (min-width: 40rem) { .episode[data-episode=fast-fashion] .episode-cast__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 80rem) { .episode[data-episode=fast-fashion] .episode-cast__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+/* Presentación Originals: solo el episodio 002 utiliza estas clases y anclas. */
+.episode[data-episode=fast-fashion] .episode-premiere { padding-top: var(--space-4); padding-bottom: var(--space-5); }
+.episode[data-episode=fast-fashion] .episode-premiere .episode-hero__meta { align-items: center; margin-bottom: var(--space-5); }
+.episode[data-episode=fast-fashion] .premiere-stamp { display: inline-block; padding: .65rem .85rem; background: var(--blue); color: var(--ink); border: 1px solid var(--blue); }
+.episode[data-episode=fast-fashion] .premiere-index { color: var(--off-white); }
+.episode[data-episode=fast-fashion] .premiere-category { margin-bottom: var(--space-3); color: var(--blue); }
+.episode[data-episode=fast-fashion] .episode-premiere h1 { max-width: 11ch; font-size: clamp(3.5rem, 1.6rem + 7vw, 8rem); line-height: .96; letter-spacing: -.055em; }
+.episode[data-episode=fast-fashion] .episode-premiere .episode-provisional { background: var(--fog); color: var(--ink); }
+.episode[data-episode=fast-fashion] .premiere-credit { margin-top: var(--space-4); }
+.episode[data-episode=fast-fashion] .premiere-copy > .button { margin-top: var(--space-4); }
+.episode[data-episode=fast-fashion] .premiere-art { position: relative; }
+.episode[data-episode=fast-fashion] .premiere-art .episode-hero-art__note { display: inline-block; position: absolute; inset: auto .5rem 0; padding: .65rem; background: var(--off-white); color: var(--ink); border: 1px solid var(--ink); transform: rotate(-4deg); }
+.episode[data-episode=fast-fashion] .premiere-art img { display: block; width: 100%; height: auto; object-fit: contain; }
+.episode[data-episode=fast-fashion] .premiere-synopsis-label { font-size: .75rem; }
+.episode[data-episode=fast-fashion] .premiere-synopsis-label + p { margin-top: var(--space-2); }
+.episode[data-episode=fast-fashion] .episode-followup { padding-block: var(--space-4); border-bottom: 1px solid var(--color-border); background: var(--off-white); color: var(--ink); }
+.episode[data-episode=fast-fashion] .episode-followup__heading { display: flex; flex-direction: column; gap: var(--space-2); margin-bottom: var(--space-4); }
+.episode[data-episode=fast-fashion] .episode-followup__heading .eyebrow { margin: 0; }
+.episode[data-episode=fast-fashion] .episode-followup__heading p:last-child { max-width: 60ch; font-size: 1rem; }
+.episode[data-episode=fast-fashion] .episode-followup__links { display: grid; gap: var(--space-2); }
+.episode[data-episode=fast-fashion] .episode-followup__links a { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-2) var(--space-3); min-height: 48px; padding: var(--space-3); border: 1px solid var(--ink); text-decoration: none; transition: background var(--motion-fast); }
+.episode[data-episode=fast-fashion] .episode-followup__links a > .label { grid-column: 1 / -1; }
+.episode[data-episode=fast-fashion] .episode-followup__links a > span:not(.label) { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; letter-spacing: -.025em; line-height: 1.15; }
+.episode[data-episode=fast-fashion] .episode-followup__links a:hover { background: var(--blue); }
+.episode[data-episode=fast-fashion] #ver-episodio,
+.episode[data-episode=fast-fashion] #comprende,
+.episode[data-episode=fast-fashion] #reflexiona,
+.episode[data-episode=fast-fashion] #actua { scroll-margin-top: var(--space-3); }
+.episode[data-episode=fast-fashion] .episode-act h2 { max-width: 18ch; font-size: clamp(2.75rem, 1.4rem + 4vw, 5.5rem); font-weight: 900; }
+.episode[data-episode=fast-fashion] .episode-act .episode-section-heading > p:not(.eyebrow) { max-width: 60ch; }
+.episode[data-episode=fast-fashion] .episode-act__list { display: grid; gap: var(--space-3); list-style: none; margin: 0; padding: 0; }
+.episode[data-episode=fast-fashion] .episode-act__list li { padding: var(--space-3); border: 1px solid var(--ink); }
+.episode[data-episode=fast-fashion] .episode-act__list p { max-width: 30ch; margin-top: var(--space-3); font-family: var(--font-display); font-size: clamp(1.375rem, 1rem + .8vw, 1.75rem); font-weight: 800; line-height: 1.2; letter-spacing: -.02em; }
+@media (min-width: 40rem) { .episode[data-episode=fast-fashion] .episode-act__list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 64rem) {
+  .episode[data-episode=fast-fashion] .episode-followup__heading { flex-direction: row; justify-content: space-between; align-items: baseline; gap: var(--space-4); }
+  .episode[data-episode=fast-fashion] .episode-followup__links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .episode[data-episode=fast-fashion] .episode-act__list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* Fotograma auténtico: tratamiento editorial solo en portada; video sin filtros. */
+.episode[data-episode=fast-fashion] .premiere-art { width: min(100%, 23rem); margin-block: var(--space-3); border: 1px solid var(--fog); transform: rotate(2deg); isolation: isolate; }
+.episode[data-episode=fast-fashion] .premiere-art::before { content: ''; position: absolute; z-index: -1; inset: 5% 3% 2% 8%; background: var(--blue); transform: rotate(-3deg); }
+.episode[data-episode=fast-fashion] .premiere-art img { aspect-ratio: 9 / 16; filter: grayscale(1); }
+
+/* Póster y protagonistas oficiales, sin filtros ni recortes. */
+.episode[data-episode=fast-fashion] .premiere-art { text-decoration: none; }
+.episode[data-episode=fast-fashion] .premiere-art img { aspect-ratio: 2 / 3; filter: none; }
+.episode[data-episode=fast-fashion] .premiere-art .episode-hero-art__note { position: relative; inset: auto; display: block; transform: none; margin: 0; text-align: left; }
+.episode[data-episode=fast-fashion] .character-portrait--official { padding: 0; background: var(--off-white); }
+.episode[data-episode=fast-fashion] .character-portrait--official::before { content: none; }
+
+/* Cada recurso tiene un uso: collage en portada, fotografía en contexto y portada propia del video. */
+.episode[data-episode=fast-fashion] .premiere-art--collage { border: 0; }
+.episode[data-episode=fast-fashion] .premiere-art--collage::before { content: none; }
+.episode[data-episode=fast-fashion] .episode-context__photo { margin: 0 0 var(--space-5); max-width: 44rem; }
+.episode[data-episode=fast-fashion] .episode-context__photo img { display: block; width: 100%; height: auto; object-fit: contain; }

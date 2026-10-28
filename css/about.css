@@ -1,0 +1,94 @@
+﻿/* Sobre nosotros: composición propia, sin cambios en el sistema global o Inicio. */
+.about { --about-rule: 1px solid var(--color-border); }
+.about h2 { max-width: 20ch; }
+.about p { text-wrap: pretty; }
+.about-hero { display: grid; gap: var(--space-4); padding-top: var(--space-6); padding-bottom: var(--space-3); }
+.about-hero__text { min-width: 0; }
+.about-hero h1 { max-width: 16ch; font-size: clamp(2.8rem, 1.35rem + 5.2vw, 6.5rem); font-weight: 900; line-height: 1.02; letter-spacing: -.055em; }
+.about-hero h1 span { color: var(--charcoal); text-decoration: underline; text-decoration-color: var(--blue); text-decoration-thickness: .065em; text-underline-offset: .09em; }
+.about-lead { margin-top: var(--space-4); max-width: 50ch; }
+.about-collage { position: relative; width: min(100%, 29rem); justify-self: center; }
+.about-collage svg { display: block; width: 100%; height: auto; }
+.about-collage__caption { position: absolute; left: 6%; bottom: 8%; background: var(--blue); color: var(--ink); border: 1px solid var(--ink); padding: .5rem .75rem; transform: rotate(-5deg); }
+.about-hero__rule { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-2); border-top: var(--about-rule); padding-top: var(--space-3); }
+.about-story__grid { display: grid; gap: var(--space-4); }
+.about-story h2 { max-width: 14ch; }
+.about-story h2 span { text-decoration: underline; text-decoration-thickness: .04em; text-underline-offset: .12em; }
+.about-story__copy { max-width: 56ch; }
+.about-story__copy p + p { margin-top: var(--space-3); }
+.about-evolution { margin-top: var(--space-6); }
+.about-evolution__caption { display: block; margin-bottom: var(--space-3); }
+.about-steps { display: grid; gap: 0; list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+.about-steps li { display: flex; align-items: center; gap: var(--space-3); padding-block: var(--space-3); border-bottom: 1px solid var(--ink); }
+.about-steps__number { font-family: var(--font-display); font-size: clamp(2.5rem, 4vw, 4rem); font-weight: 900; line-height: 1; letter-spacing: -.06em; }
+.about-steps li > span:last-child { max-width: 19ch; font-weight: 600; }
+.about-purpose { display: grid; }
+.about-purpose__panel { position: relative; min-width: 0; padding: var(--space-6) var(--page-gutter); }
+.about-purpose__heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-5); }
+.about-purpose__heading .label { max-width: 18ch; }
+.about-purpose__number { font-family: var(--font-display); font-weight: 900; font-size: clamp(4rem, 8vw, 8rem); line-height: .9; letter-spacing: -.06em; }
+.about-purpose__panel h2 { font-size: clamp(3rem, 5vw, 5rem); }
+.about-purpose__panel > p { max-width: 47ch; margin-top: var(--space-3); }
+.about-purpose__sign { display: block; text-align: right; color: var(--blue); margin-top: var(--space-4); font-family: var(--font-label); font-size: 4rem; line-height: 1; }
+.about-purpose__panel.surface--fog .about-purpose__sign { color: var(--ink); }
+.about-values__heading { margin-bottom: var(--space-5); }
+.about-values__grid { display: grid; gap: var(--space-2); }
+.about-value { border-radius: 0; transition: background var(--motion-fast), border-color var(--motion-fast), transform var(--motion-fast); }
+.about-value:hover { background: var(--fog); border-color: var(--ink); transform: translateY(-3px); }
+.about-value__index { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-2); margin-bottom: var(--space-5); }
+.about-value__index .label { max-width: 25ch; }
+.about-value__symbol { width: 2.5rem; height: 2.5rem; flex-shrink: 0; fill: none; stroke: var(--ink); stroke-width: 1.5; background: var(--blue); }
+.about-value h3 { max-width: 20ch; }
+.about-value p { max-width: 44ch; }
+.about-closing h2 { max-width: 20ch; font-size: clamp(2.5rem, 1.4rem + 4.5vw, 6rem); font-weight: 900; overflow-wrap: anywhere; }
+.about-closing h2 span { text-decoration: underline; text-decoration-thickness: .045em; text-underline-offset: .1em; }
+.about-closing__bottom { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-4); padding-top: var(--space-4); margin-top: var(--space-5); border-top: 1px solid var(--ink); }
+.about-closing__bottom p { max-width: 47ch; }
+@media (min-width: 40rem) {
+  .about-values__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .about-purpose { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .about-purpose__panel { display: flex; flex-direction: column; }
+  .about-purpose__sign { margin-top: auto; padding-top: var(--space-4); }
+  .about-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); border-bottom: 1px solid var(--ink); }
+  .about-steps li { flex-direction: column; align-items: flex-start; border-bottom: 0; padding-right: var(--space-3); }
+  .about-steps li + li { border-left: 1px solid var(--ink); padding-left: var(--space-3); }
+}
+@media (min-width: 64rem) {
+  .about-hero { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); align-items: center; }
+  .about-collage { align-self: end; }
+  .about-hero__rule { grid-column: 1 / -1; margin-top: var(--space-4); }
+  .about-story__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-6); }
+  .about-purpose__panel:first-child { padding-left: max(var(--page-gutter), calc((100vw - var(--content-width)) / 2)); }
+  .about-purpose__panel:last-child { padding-right: max(var(--page-gutter), calc((100vw - var(--content-width)) / 2)); }
+  .about-values__heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: var(--space-4); align-items: baseline; }
+  .about-values__grid { gap: var(--space-3); }
+  .about-closing__bottom { flex-direction: row; justify-content: space-between; align-items: center; }
+  .about-closing__bottom .button { flex-shrink: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .about-value:hover { transform: none; } }
+
+
+
+
+/* Equipo creativo: reglas limitadas a esta sección de Sobre nosotros. */
+.about-team .about-team__heading { max-width: 66rem; }
+.about-team #team-title { max-width: 17ch; font-family: var(--font-display); font-size: clamp(2.75rem, 1.6rem + 4.5vw, 6rem); font-weight: 900; line-height: 1; letter-spacing: -.055em; }
+.about-team #team-title > span { color: var(--blue); }
+.about-team .about-team__presentation { display: grid; gap: var(--space-4); align-items: center; margin-top: var(--space-5); }
+.about-team .about-team__logo-frame { width: min(100%, 10rem); padding: var(--space-2); border: 1px solid var(--fog); background: var(--off-white); }
+.about-team .about-team__logo { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; }
+.about-team .about-team__copy { min-width: 0; max-width: 60ch; }
+.about-team .about-team__copy h3 { font-family: var(--font-display); font-size: clamp(1.75rem, 1.3rem + 1.5vw, 2.75rem); font-weight: 800; line-height: 1.15; margin-bottom: var(--space-3); }
+.about-team .about-team__members { margin-top: var(--space-5); padding-top: var(--space-4); border-top: 1px solid var(--color-border); }
+.about-team .about-team__cards { display: grid; gap: var(--space-3); list-style: none; margin: 0; padding: 0; }
+.about-team .about-team__member { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-4); min-width: 0; padding: var(--space-4) var(--space-3); border: 1px solid var(--fog); }
+.about-team .about-team__number { color: var(--blue); border-bottom: 2px solid currentColor; padding-bottom: var(--space-1); }
+.about-team .about-team__member h3 { max-width: 12ch; font-family: var(--font-display); font-size: clamp(1.75rem, 1.5rem + .7vw, 2.25rem); font-weight: 800; letter-spacing: -.025em; line-height: 1.15; overflow-wrap: break-word; }
+@media (min-width: 40rem) {
+  .about-team .about-team__presentation { grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); gap: var(--space-5); }
+  .about-team .about-team__logo-frame { width: 100%; }
+  .about-team .about-team__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 64rem) {
+  .about-team .about-team__cards { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}

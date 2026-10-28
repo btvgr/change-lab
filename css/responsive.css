@@ -1,0 +1,14 @@
+﻿/* Mobile-first: mantener 64rem alineado con navigation.js. */
+@media (min-width: 40rem) {
+  .footer-inner { flex-direction: row; justify-content: space-between; align-items: baseline; }
+  .hero__visual { max-width: 35rem; }
+}
+@media (min-width: 64rem) {
+  .header-inner { flex-wrap: nowrap; }
+  .site-nav { width: auto; flex-direction: row; gap: .125rem; }
+  .menu-toggle { display: none; }
+  .hero--home { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); align-items: center; gap: var(--space-4); }
+  .hero--home .eyebrow { max-width: 40ch; }
+  .hero__visual { margin-top: var(--space-6); transform: rotate(-2deg); }
+}
+

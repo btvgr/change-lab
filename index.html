@@ -1,0 +1,177 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Una plataforma educativa gratuita para explorar problemáticas sociales a través de contenido audiovisual. Un proyecto del equipo estudiantil The Nebula Society.">
+  <meta name="theme-color" content="#F7F7F5">
+  <title>Inicio — Change Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Outfit:wght@800;900&amp;family=Space+Mono:wght@400&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/home.css">
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/home.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Change Lab — Inicio">change lab<span class="brand__dot" aria-hidden="true">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacion" hidden>Menú <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <nav class="site-nav" id="navegacion" aria-label="Navegación principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="problematicas.html">Problemáticas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="reflexiona.html">Reflexiona</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main class="home" id="contenido" tabindex="-1">
+    <section class="home-hero container" aria-labelledby="page-title">
+      <div class="home-hero__copy">
+        <p class="eyebrow">EDICIÓN 001 — OTRA FORMA DE MIRAR</p>
+        <h1 id="page-title">No solo mires.<br><span>Cuestiona.</span></h1>
+        <p class="home-hero__subtitle">Historias que informan.<br>Perspectivas que transforman.</p>
+        <a class="button button--primary" href="problematicas.html">Explorar contenido <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+      </div>
+      <div class="cover-art cover-art--photo" aria-hidden="true">
+        <div class="cover-art__frame">
+          <img class="cover-art__photo" src="assets/images/hero/multitud-web.webp" width="1200" height="846" alt="" decoding="async" fetchpriority="high">
+          <span class="label cover-art__index">ARCHIVO VISUAL / 001</span>
+          <svg class="cover-art__crowd" viewBox="0 0 480 560" focusable="false">
+            <defs>
+              <pattern id="print-dots" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="currentColor"/></pattern>
+              <symbol id="crowd-person" viewBox="0 0 80 190"><circle cx="40" cy="32" r="23"/><path d="M3 190V98Q3 66 40 66T77 98V190Z"/></symbol>
+            </defs>
+            <path fill="var(--off-white)" d="m26 67 417-35 27 460-426 39Z"/>
+            <g fill="var(--charcoal)" opacity=".8">
+              <use href="#crowd-person" x="-24" y="100" width="96" height="228"/>
+              <use href="#crowd-person" x="68" y="78" width="96" height="228"/>
+              <use href="#crowd-person" x="162" y="65" width="96" height="228"/>
+              <use href="#crowd-person" x="257" y="84" width="96" height="228"/>
+              <use href="#crowd-person" x="351" y="60" width="96" height="228"/>
+              <use href="#crowd-person" x="438" y="100" width="96" height="228"/>
+            </g>
+            <g fill="var(--ink)">
+              <use href="#crowd-person" x="-55" y="268" width="120" height="285"/>
+              <use href="#crowd-person" x="56" y="256" width="120" height="285"/>
+              <use href="#crowd-person" x="292" y="245" width="120" height="285"/>
+              <use href="#crowd-person" x="403" y="275" width="120" height="285"/>
+            </g>
+            <path fill="url(#print-dots)" d="M0 0h480v560H0z" opacity=".2"/>
+            <use href="#crowd-person" x="162" y="214" width="140" height="332" fill="var(--blue)" transform="rotate(-5 232 380)"/>
+            <path d="m151 220 24-24m-39-6 28-8m21-23 3-26" fill="none" stroke="var(--ink)" stroke-width="3"/>
+          </svg>
+          <span class="cover-art__caption label">Otra perspectiva<br>cambia el encuadre.</span>
+        </div>
+        <span class="cover-art__stamp label">OTRA FORMA DE MIRAR / 001</span>
+      </div>
+      <a class="scroll-cue label" href="#proyecto">Sigue mirando <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a>
+    </section>
+
+    <section class="surface--blue section-shell home-intro" id="proyecto" aria-labelledby="intro-title">
+      <div class="container editorial-grid" data-reveal>
+        <div class="intro-copy">
+          <p class="eyebrow">01 / EL PROYECTO</p>
+          <h2 id="intro-title">Una plataforma para mirar más allá de lo evidente.</h2>
+          <p class="section-copy">Change Lab reúne videos y recursos educativos sobre problemáticas sociales que merecen nuestra atención. Un espacio para descubrir, comprender y cuestionar lo que sucede a nuestro alrededor.</p>
+          <a class="button" href="sobre-nosotros.html">Conoce el proyecto <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+        </div>
+        <div class="megaphone-art" aria-hidden="true">
+          <span class="label megaphone-art__tag">AMPLIFICA TU MIRADA</span>
+          <svg viewBox="0 0 480 400" focusable="false">
+            <path d="m70 93 313-30 28 272-318 32Z" fill="var(--off-white)"/>
+            <path d="m56 131 307-50 45 258-307 23Z" fill="var(--fog)"/>
+            <g transform="rotate(-16 240 200)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round">
+              <path d="m186 243 10 90h41l-9-104" fill="var(--ink)"/>
+              <path d="m115 172 100-4 117-71v208l-117-70-100-4Z" fill="var(--off-white)"/>
+              <path d="M115 172h37v59h-37Z" fill="var(--charcoal)"/>
+              <path d="M215 168v67m117-138v208" fill="none"/>
+              <path d="m362 154 44-17m-42 63h50m-52 45 40 21" fill="none"/>
+            </g>
+            <path d="m49 327 75-8m229-273 69 12" stroke="var(--ink)" stroke-width="2"/>
+          </svg>
+          <span class="label megaphone-art__note">Explora. Reflexiona. Actúa.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="surface--dark section-shell home-topics" aria-labelledby="topics-title">
+      <div class="container">
+        <header class="topics-heading" data-reveal>
+          <p class="eyebrow">EXPLORA / 001—003</p>
+          <h2 id="topics-title">Tres realidades.<br>Muchas preguntas.</h2>
+        </header>
+        <div class="topics-grid">
+          <article class="topic" data-reveal>
+            <a class="card topic-card" href="problematicas.html">
+              <div class="topic-art topic-art--street topic-art--photo"><img src="assets/images/problematicas/pandillaje-web.webp" width="1000" height="663" loading="lazy" decoding="async" alt="Personas caminando por una calle de un barrio; fotografía de contexto comunitario."><span class="topic-art__number" aria-hidden="true">001</span></div>
+              <div class="topic-card__body"><span class="label">SOCIEDAD / COMUNIDAD</span><h3 class="card__title">Pandillaje</h3><p class="card__description">Comprende sus causas, consecuencias y alternativas de prevención.</p><span class="topic-card__link">Explorar problemática <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></div>
+            </a>
+          </article>
+          <article class="topic" data-reveal>
+            <a class="card topic-card" href="problematicas.html">
+              <div class="topic-art topic-art--fashion topic-art--photo"><img src="assets/images/problematicas/fast-fashion.jpg" width="700" height="600" loading="lazy" decoding="async" alt="Prendas y retazos textiles acumulados en un almacén."><span class="topic-art__number" aria-hidden="true">002</span></div>
+              <div class="topic-card__body"><span class="label">CONSUMO / ENTORNO</span><h3 class="card__title">Fast fashion</h3><p class="card__description">Descubre el impacto social y ambiental de la moda rápida.</p><span class="topic-card__link">Explorar problemática <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></div>
+            </a>
+          </article>
+          <article class="topic" data-reveal>
+            <a class="card topic-card" href="problematicas.html">
+              <div class="topic-art topic-art--digital topic-art--photo"><img src="assets/images/problematicas/ciberacoso-web.webp" width="900" height="600" loading="lazy" decoding="async" alt="Manos utilizando un teléfono móvil con una red social."><span class="topic-art__number" aria-hidden="true">003</span></div>
+              <div class="topic-card__body"><span class="label">CONVIVENCIA / INTERNET</span><h3 class="card__title">Ciberacoso</h3><p class="card__description">Aprende a reconocerlo y a construir espacios digitales más seguros.</p><span class="topic-card__link">Explorar problemática <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></div>
+            </a>
+          </article>
+        </div>
+        <div class="topics-bottom"><span class="label">Una mirada es solo el comienzo.</span><a class="button button--primary" href="problematicas.html">Ver todas las problemáticas <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div>
+      </div>
+    </section>
+
+    <section class="surface--fog section-shell home-reflection" aria-labelledby="reflection-title">
+      <div class="container editorial-grid" data-reveal>
+        <div>
+          <p class="eyebrow">02 / CAMBIA EL ENFOQUE</p>
+          <h2 id="reflection-title">Informarse también es una forma de actuar.</h2>
+          <p class="section-copy">Cuando conocemos distintas realidades, aprendemos a cuestionar nuestras ideas, comprender otras perspectivas y tomar decisiones más conscientes.</p>
+        </div>
+        <div class="eyes-art" aria-hidden="true">
+          <span class="eyes-art__question">?</span>
+          <svg viewBox="0 0 480 360" focusable="false">
+            <path d="m17 112 414-27 21 149-420 27Z" fill="var(--off-white)"/>
+            <path d="m53 118 390 20-9 116-387-22Z" fill="var(--blue)"/>
+            <g transform="rotate(3 240 180)" stroke="var(--ink)" stroke-width="4">
+              <path d="M78 181q66-75 132 0-66 66-132 0Zm192 0q66-75 132 0-66 66-132 0Z" fill="var(--off-white)"/>
+              <ellipse cx="144" cy="178" rx="23" ry="29" fill="var(--ink)"/><ellipse cx="336" cy="178" rx="23" ry="29" fill="var(--ink)"/>
+              <path d="M86 132q55-32 113 1m81-1q55-32 113 1" fill="none"/>
+            </g>
+            <path d="m23 297 116-12m229-236 77 9" stroke="var(--ink)" stroke-width="2"/>
+          </svg>
+          <span class="label eyes-art__note">MIRAR ≠ DAR POR HECHO</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="surface--paper section-shell home-closing" aria-labelledby="closing-title">
+      <div class="container" data-reveal>
+        <p class="eyebrow">SIGUE LA PREGUNTA</p>
+        <h2 id="closing-title">El cambio comienza con una <span>pregunta.</span></h2>
+        <div class="closing-bottom"><p>Explora nuevas perspectivas y descubre historias que invitan a pensar diferente.</p><a class="button button--primary" href="problematicas.html">Empieza a explorar <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Change Lab — Desarrollado por The Nebula Society</p>
+      <p class="footer-note">Explora. Reflexiona. Actúa.</p>
+    </div>
+    <div class="institution-credit"><div class="container institution-credit__inner"><img src="assets/images/identidad/logo-fya-web.webp" width="800" height="800" loading="lazy" decoding="async" alt="Fe y Alegría N.º 2"><p>Proyecto desarrollado en el taller de computación de Fe y Alegría N.º 2.</p></div></div>
+  </footer>
+</body>
+</html>
+
+
