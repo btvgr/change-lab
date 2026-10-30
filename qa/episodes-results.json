@@ -11,15 +11,15 @@
       "width": 720,
       "height": 1280,
       "duration": 60.067166,
-      "poster": "http://127.0.0.1:63624/change-lab/assets/episodios/pandillaje/portada-pandillaje.png",
+      "poster": "http://127.0.0.1:51299/change-lab/assets/episodios/pandillaje/portada-pandillaje.png",
       "tracks": 0
     },
     "playing": {
       "paused": false,
-      "time": 0.329105,
+      "time": 0.316715,
       "muted": false,
       "volume": 1,
-      "frames": 6
+      "frames": 8
     },
     "responsive": [
       {
@@ -63,12 +63,12 @@
       "width": 1080,
       "height": 1920,
       "duration": 63.808549,
-      "poster": "http://127.0.0.1:63624/change-lab/assets/episodios/ciberacoso/portada-ciberacoso.png",
+      "poster": "http://127.0.0.1:51299/change-lab/assets/episodios/ciberacoso/portada-ciberacoso.png",
       "tracks": 0
     },
     "playing": {
       "paused": false,
-      "time": 0.327844,
+      "time": 0.320583,
       "muted": false,
       "volume": 1,
       "frames": 13
@@ -115,15 +115,15 @@
       "width": 720,
       "height": 1280,
       "duration": 56.052993,
-      "poster": "http://127.0.0.1:63624/change-lab/assets/episodios/fast-fashion/portada-fast-fashion-web.webp",
+      "poster": "http://127.0.0.1:51299/change-lab/assets/episodios/fast-fashion/portada-fast-fashion-web.webp",
       "tracks": 0
     },
     "playing": {
       "paused": false,
-      "time": 0.346763,
+      "time": 0.372711,
       "muted": false,
       "volume": 1,
-      "frames": 10
+      "frames": 9
     },
     "responsive": [
       {

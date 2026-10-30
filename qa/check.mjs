@@ -33,6 +33,9 @@ async function test(name, run) { await run(); passed.push(name); console.log('PA
 await test('Rutas, anclas, IDs y un h1 en todos los HTML', async () => {
   for (const file of files.filter(file => file.endsWith('.html'))) {
     const html = await readFile(file, 'utf8');
+    const nav = html.match(/<nav class="site-nav"[\s\S]*?<\/nav>/)?.[0];
+    assert.ok(nav, file + ': navegación principal');
+    assert.deepEqual([...nav.matchAll(/<a\b[^>]*>([^<]+)<\/a>/g)].map(m=>m[1]), ['Inicio','Sobre nosotros','Problemáticas','Shorts','Reflexiona','Contacto'], file);
     assert.equal([...html.matchAll(/<h1\b/g)].length, 1, file);
     if (path.basename(file) === 'reflexiona.html') assert.ok(!html.includes('<li><h4>'), 'Jerarquía del respaldo sin JS');
     const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
@@ -49,6 +52,26 @@ await test('Rutas, anclas, IDs y un h1 en todos los HTML', async () => {
     }
     for (const [, refs] of html.matchAll(/(?:aria-labelledby|aria-describedby|aria-controls|for)="([^"]+)"/g)) {
       for (const id of refs.split(/\s+/)) assert.ok(ids.includes(id), file + ': ' + id);
+    }
+  }
+});
+await test('Profundiza y recorrido completo en los tres episodios; reparto definitivo de Ciberacoso', async () => {
+  for (const slug of Object.keys(episodes)) {
+    const html = await readFile(path.join(root, `temas/${slug}.html`), 'utf8');
+    let previous = -1;
+    for (const id of ['ver-episodio','comprende','reflexiona','profundiza','actua']) {
+      assert.ok(html.includes(`href="#${id}"`));
+      const position = html.indexOf(`id="${id}"`);
+      assert.ok(position > previous, slug + ': orden ' + id);
+      previous = position;
+    }
+    assert.equal([...html.matchAll(/class="episode-reading"/g)].length, 4);
+    if (slug === 'ciberacoso') {
+      assert.equal([...html.matchAll(/class="card character-card"/g)].length, 3);
+      assert.ok(!html.includes('Retrato no disponible'));
+      assert.ok(!html.includes('Mora'));
+      assert.ok(!html.includes('Manzana'));
+      for (const portrait of ['fresita.png','uva.png','platano.png']) assert.ok(html.includes(`ciberacoso/${portrait}`));
     }
   }
 });

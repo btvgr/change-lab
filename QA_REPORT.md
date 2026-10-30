@@ -1,3 +1,30 @@
+# Reorganización de episodios — 30 de octubre de 2026
+
+Esta revisión actualiza los resultados históricos que siguen más abajo.
+
+- Ciberacoso: exactamente Fresa, Uva y Plátano, con las descripciones solicitadas y sus tres imágenes originales. No existe un generador ni un catálogo compartido de personajes; el reparto está en el HTML. Se corrigieron también las instrucciones editoriales antiguas que pedían retratos adicionales.
+- Cada episodio incluye navegación funcional a Ver video, Comprende, Reflexiona, Profundiza y Actúa. Profundiza está entre el cuestionario y Actúa, con cuatro desplegables HTML nativos, numeración, detalles azules y fondos alternados.
+- Pandillaje reutiliza la introducción, los factores de riesgo y protección, la pregunta comunitaria y los portales UNICEF/UNESCO. Amplía acompañamiento, oportunidades educativas y prevención.
+- Fast Fashion reutiliza introducción, consumo, recursos/residuos textiles, alternativas y pregunta sobre vida útil. Añade preguntas para investigar condiciones laborales y conserva PNUMA.
+- Ciberacoso reutiliza introducción, reconocimiento, prevención, apoyo y pregunta sobre convivencia. Organiza privacidad, consentimiento, acompañamiento y herramientas de reporte; conserva UNICEF/UNESCO.
+- No se añadieron estadísticas ni fuentes específicas no verificadas. Los portales generales se identifican como tales; la revisión editorial de referencias concretas sigue pendiente.
+- Recursos desaparece de los trece menús HTML, incluida la plantilla. recursos.html permanece como página informativa con enlaces a las nuevas secciones y conserva los fragmentos biblioteca y sources-title. Las tres fichas antiguas permanecen disponibles y enlazan al Profundiza correspondiente. El renderizador de fichas también dirige al episodio.
+
+Pruebas ejecutadas en esta revisión:
+
+- `qa/check.mjs`: 10 grupos aprobados, incluidos enlaces y anclas de los 13 HTML, navegación principal, orden de las secciones, reparto de Ciberacoso, carga de módulos, 63 evaluaciones de cuestionarios y pruebas existentes de navegación, contacto y reflexión.
+- `qa/pages-check.mjs`: 72 rutas locales con capitalización y subdirectorio /change-lab/ correctos; respuestas HTTP y solicitudes Range de los tres MP4 aprobadas.
+- `qa/episodes-browser.mjs` con Chrome headless: reproducción y pausa reales de los tres videos, duración y fotogramas, sin autoplay; cuestionarios con vacío, error, acierto y reinicio; retratos cargados; ningún error JavaScript. No se verificó el audio mediante escucha humana.
+- Los tres episodios a 375, 768, 1024 y 1440 px: sin desbordamiento horizontal ni imágenes rotas. Ciberacoso tiene tres columnas a 1024/1440 y una columna a 375/768. Capturas locales en qa/ (ignoradas por Git); revisión visual de Ciberacoso en escritorio y Fast Fashion en móvil.
+- Los doce desplegables abren con Enter y cierran con Espacio, con foco visible. Se emuló prefers-reduced-motion; los nuevos estilos no incorporan animaciones.
+- Comparación de hashes con HEAD: los 46 assets originales, incluidos videos, posters, portadas, retratos y logos, no cambiaron. Comparación del bloque completo de personajes: Pandillaje y Fast Fashion intactos.
+- Portales conservados: UNICEF y UNESCO respondieron HTTP 200; PNUMA respondió HTTP 403 a la solicitud automatizada. Se mantiene su dirección existente; no se considera verificada su disponibilidad en navegador humano.
+- `git diff --check`: sin errores. No se realizó commit, push ni publicación.
+
+No se realizó una auditoría con lector de pantalla ni una nueva verificación editorial de fuentes externas. Los resultados de navegador de esta ejecución están en `qa/episodes-results.json`.
+
+---
+
 ﻿# QA_REPORT — Change Lab
 
 ## Resultado y alcance

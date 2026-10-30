@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Explora nuestras frutinovelas y descubre cómo una historia puede abrir nuevas perspectivas.">
+  <meta name="theme-color" content="#111111">
+  <title>Change Lab Shorts — Change Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Outfit:wght@800;900&amp;family=Space+Mono:wght@400&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/shorts.css">
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/shorts.js"></script>
+</head>
+<body class="shorts-layout">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Change Lab — Inicio">change lab<span class="brand__dot" aria-hidden="true">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacion" hidden>Menú <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <nav class="site-nav" id="navegacion" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="problematicas.html">Problemáticas</a>
+        <a href="shorts.html" aria-current="page">Shorts</a>
+        <a href="reflexiona.html">Reflexiona</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main class="shorts-page" id="contenido" tabindex="-1" data-shorts>
+  <div class="shorts-bar"><h1 id="page-title">Change Lab <span>Shorts</span></h1><p class="label shorts-counter" data-counter role="status" aria-live="polite" aria-atomic="true">01 / 03</p></div>
+  <div class="shorts-viewer">
+    <div class="shorts-feed" data-shorts-feed tabindex="0" role="region" aria-label="Visor de frutinovelas" aria-describedby="shorts-help">
+      <section class="short-panel" id="pandillaje" aria-labelledby="title-pandillaje" data-title="El precio del dinero fácil"><div class="reel-frame">
+  <video src="assets/videos/pandillaje.mp4" poster="assets/episodios/pandillaje/portada-pandillaje.png" width="720" height="1280" controls muted playsinline preload="none" aria-label="Frutinovela: El precio del dinero fácil">Tu navegador no admite video HTML5. <a href="assets/videos/pandillaje.mp4">Abrir el video</a>.</video>
+  <div class="reel-meta"><p class="label">001 / PANDILLAJE</p><h2 id="title-pandillaje">El precio del dinero fácil</h2><a href="temas/pandillaje.html" aria-label="Comprende esta historia: El precio del dinero fácil">Comprende esta historia ↗</a></div>
+</div></section>
+<section class="short-panel" id="fast-fashion" aria-labelledby="title-fast-fashion" data-title="Detrás de la etiqueta"><div class="reel-frame">
+  <video src="assets/videos/fast-fashion-web.mp4" poster="assets/episodios/fast-fashion/portada-fast-fashion-web.webp" width="720" height="1280" controls muted playsinline preload="none" aria-label="Frutinovela: Detrás de la etiqueta">Tu navegador no admite video HTML5. <a href="assets/videos/fast-fashion-web.mp4">Abrir el video</a>.</video>
+  <div class="reel-meta"><p class="label">002 / FAST FASHION</p><h2 id="title-fast-fashion">Detrás de la etiqueta</h2><a href="temas/fast-fashion.html" aria-label="Comprende esta historia: Detrás de la etiqueta">Comprende esta historia ↗</a></div>
+</div></section>
+<section class="short-panel" id="ciberacoso" aria-labelledby="title-ciberacoso" data-title="Detrás de cada pantalla"><div class="reel-frame">
+  <video src="assets/videos/ciberacoso.mp4" poster="assets/episodios/ciberacoso/portada-ciberacoso.png" width="1080" height="1920" controls muted playsinline preload="none" aria-label="Frutinovela: Detrás de cada pantalla">Tu navegador no admite video HTML5. <a href="assets/videos/ciberacoso.mp4">Abrir el video</a>.</video>
+  <div class="reel-meta"><p class="label">003 / CIBERACOSO</p><h2 id="title-ciberacoso">Detrás de cada pantalla</h2><a href="temas/ciberacoso.html" aria-label="Comprende esta historia: Detrás de cada pantalla">Comprende esta historia ↗</a></div>
+</div></section>
+    </div>
+    <div class="shorts-controls" data-controls role="group" aria-label="Controles del episodio activo" hidden>
+      <button class="short-control " type="button" data-previous disabled aria-label="Episodio anterior"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 15 6-6 6 6"/></svg></button>
+      <button class="short-control " type="button" data-play aria-label="Reproducir video"><span data-play-icon><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 11 7-11 7Z"/></svg></span><span data-pause-icon hidden><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5v14M16 5v14"/></svg></span></button>
+      <button class="short-control " type="button" data-sound aria-pressed="false" aria-label="Activar sonido"><span data-muted-icon><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5 6 9H3v6h3l5 4ZM16 9l6 6m0-6-6 6"/></svg></span><span data-sound-icon hidden><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 5 6 9H3v6h3l5 4ZM16 8c3 2 3 6 0 8m3-11c5 4 5 10 0 14"/></svg></span></button>
+      <button class="short-control short-control--speed" type="button" data-speed aria-pressed="false" aria-label="Velocidad 1x. Cambiar a 2x">1x</button>
+      <button class="short-control " type="button" data-next aria-label="Episodio siguiente"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button>
+    </div>
+    <p class="shorts-message" data-status role="status" aria-live="polite" hidden></p>
+  </div>
+  <p class="shorts-help" id="shorts-help">Desliza o enfoca el visor y usa ↑ ↓. Subtítulos sincronizados pendientes.</p>
+  <noscript><nav class="shorts-fallback" aria-label="Elegir episodio"><a href="#pandillaje">001</a> · <a href="#fast-fashion">002</a> · <a href="#ciberacoso">003</a></nav></noscript>
+</main>
+  <footer class="site-footer"><div class="shorts-footer"><img src="assets/images/identidad/isotipo-tns-web-f716e431.webp" width="22" height="22" alt="The Nebula Society"><p>The Nebula Society</p><span aria-hidden="true">/</span><img src="assets/images/identidad/logo-fya-web.webp" width="22" height="22" alt="Fe y Alegría N.º 2"><p>Fe y Alegría N.º 2</p></div></footer>
+</body>
+</html>

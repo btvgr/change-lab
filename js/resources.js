@@ -27,8 +27,8 @@ export function renderResourceCard(resource) {
   const body = create('div', 'library-card__body');
   const title = create('h3', 'card__title', resource.title);
   title.id = `ficha-${resource.slug}`;
-  const link = create('a', 'text-link library-card__link', 'Leer ficha completa');
-  link.href = resource.route;
+  const link = create('a', 'text-link library-card__link', 'Profundiza en el episodio');
+  link.href = `${resource.episodeRoute}#profundiza`;
   link.append(create('span', 'library-sr-only', ': ' + resource.title), create('span', '', ' ↗'));
   body.append(create('p', 'label', resource.category), title, create('p', 'card__description', resource.introduction), link);
   card.append(cover, body);

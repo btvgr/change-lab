@@ -1,0 +1,389 @@
+{
+  "responsive": [
+    {
+      "width": 375,
+      "document": 375,
+      "height": 900,
+      "documentHeight": 900,
+      "viewer": {
+        "x": 0,
+        "y": 91.296875,
+        "width": 375,
+        "height": 666.234375,
+        "right": 375,
+        "bottom": 757.53125
+      },
+      "video": {
+        "x": 8,
+        "y": 105.296875,
+        "width": 358.984375,
+        "height": 638.21875,
+        "right": 366.984375,
+        "bottom": 743.515625
+      },
+      "controls": [
+        {
+          "x": 51.5,
+          "y": 765.53125,
+          "width": 48,
+          "height": 48,
+          "right": 99.5,
+          "bottom": 813.53125
+        },
+        {
+          "x": 107.5,
+          "y": 765.53125,
+          "width": 48,
+          "height": 48,
+          "right": 155.5,
+          "bottom": 813.53125
+        },
+        {
+          "x": 163.5,
+          "y": 765.53125,
+          "width": 48,
+          "height": 48,
+          "right": 211.5,
+          "bottom": 813.53125
+        },
+        {
+          "x": 219.5,
+          "y": 765.53125,
+          "width": 48,
+          "height": 48,
+          "right": 267.5,
+          "bottom": 813.53125
+        },
+        {
+          "x": 275.5,
+          "y": 765.53125,
+          "width": 48,
+          "height": 48,
+          "right": 323.5,
+          "bottom": 813.53125
+        }
+      ],
+      "panels": [
+        {
+          "x": 0,
+          "y": 91.296875,
+          "width": 375,
+          "height": 666.234375,
+          "right": 375,
+          "bottom": 757.53125
+        },
+        {
+          "x": 0,
+          "y": 757.53125,
+          "width": 375,
+          "height": 666.234375,
+          "right": 375,
+          "bottom": 1423.765625
+        },
+        {
+          "x": 0,
+          "y": 1423.765625,
+          "width": 375,
+          "height": 666.234375,
+          "right": 375,
+          "bottom": 2090
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "document": 768,
+      "height": 900,
+      "documentHeight": 900,
+      "viewer": {
+        "x": 0,
+        "y": 93.90625,
+        "width": 768,
+        "height": 745.765625,
+        "right": 768,
+        "bottom": 839.671875
+      },
+      "video": {
+        "x": 174.25,
+        "y": 93.90625,
+        "width": 419.484375,
+        "height": 745.765625,
+        "right": 593.734375,
+        "bottom": 839.671875
+      },
+      "controls": [
+        {
+          "x": 609.734375,
+          "y": 330.78125,
+          "width": 48,
+          "height": 48,
+          "right": 657.734375,
+          "bottom": 378.78125
+        },
+        {
+          "x": 609.734375,
+          "y": 386.78125,
+          "width": 48,
+          "height": 48,
+          "right": 657.734375,
+          "bottom": 434.78125
+        },
+        {
+          "x": 609.734375,
+          "y": 442.78125,
+          "width": 48,
+          "height": 48,
+          "right": 657.734375,
+          "bottom": 490.78125
+        },
+        {
+          "x": 609.734375,
+          "y": 498.78125,
+          "width": 48,
+          "height": 48,
+          "right": 657.734375,
+          "bottom": 546.78125
+        },
+        {
+          "x": 609.734375,
+          "y": 554.78125,
+          "width": 48,
+          "height": 48,
+          "right": 657.734375,
+          "bottom": 602.78125
+        }
+      ],
+      "panels": [
+        {
+          "x": 0,
+          "y": 93.90625,
+          "width": 768,
+          "height": 745.765625,
+          "right": 768,
+          "bottom": 839.671875
+        },
+        {
+          "x": 0,
+          "y": 839.671875,
+          "width": 768,
+          "height": 745.765625,
+          "right": 768,
+          "bottom": 1585.4375
+        },
+        {
+          "x": 0,
+          "y": 1585.4375,
+          "width": 768,
+          "height": 745.765625,
+          "right": 768,
+          "bottom": 2331.203125
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "document": 1024,
+      "height": 900,
+      "documentHeight": 900,
+      "viewer": {
+        "x": 0,
+        "y": 92.28125,
+        "width": 1024,
+        "height": 747.390625,
+        "right": 1024,
+        "bottom": 839.671875
+      },
+      "video": {
+        "x": 301.796875,
+        "y": 92.28125,
+        "width": 420.40625,
+        "height": 747.390625,
+        "right": 722.203125,
+        "bottom": 839.671875
+      },
+      "controls": [
+        {
+          "x": 738.203125,
+          "y": 329.96875,
+          "width": 48,
+          "height": 48,
+          "right": 786.203125,
+          "bottom": 377.96875
+        },
+        {
+          "x": 738.203125,
+          "y": 385.96875,
+          "width": 48,
+          "height": 48,
+          "right": 786.203125,
+          "bottom": 433.96875
+        },
+        {
+          "x": 738.203125,
+          "y": 441.96875,
+          "width": 48,
+          "height": 48,
+          "right": 786.203125,
+          "bottom": 489.96875
+        },
+        {
+          "x": 738.203125,
+          "y": 497.96875,
+          "width": 48,
+          "height": 48,
+          "right": 786.203125,
+          "bottom": 545.96875
+        },
+        {
+          "x": 738.203125,
+          "y": 553.96875,
+          "width": 48,
+          "height": 48,
+          "right": 786.203125,
+          "bottom": 601.96875
+        }
+      ],
+      "panels": [
+        {
+          "x": 0,
+          "y": 92.28125,
+          "width": 1024,
+          "height": 747.390625,
+          "right": 1024,
+          "bottom": 839.671875
+        },
+        {
+          "x": 0,
+          "y": 839.671875,
+          "width": 1024,
+          "height": 747.390625,
+          "right": 1024,
+          "bottom": 1587.0625
+        },
+        {
+          "x": 0,
+          "y": 1587.0625,
+          "width": 1024,
+          "height": 747.390625,
+          "right": 1024,
+          "bottom": 2334.453125
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "document": 1440,
+      "height": 900,
+      "documentHeight": 900,
+      "viewer": {
+        "x": 0,
+        "y": 93.28125,
+        "width": 1440,
+        "height": 746.390625,
+        "right": 1440,
+        "bottom": 839.671875
+      },
+      "video": {
+        "x": 510.078125,
+        "y": 93.28125,
+        "width": 419.84375,
+        "height": 746.390625,
+        "right": 929.921875,
+        "bottom": 839.671875
+      },
+      "controls": [
+        {
+          "x": 945.921875,
+          "y": 330.46875,
+          "width": 48,
+          "height": 48,
+          "right": 993.921875,
+          "bottom": 378.46875
+        },
+        {
+          "x": 945.921875,
+          "y": 386.46875,
+          "width": 48,
+          "height": 48,
+          "right": 993.921875,
+          "bottom": 434.46875
+        },
+        {
+          "x": 945.921875,
+          "y": 442.46875,
+          "width": 48,
+          "height": 48,
+          "right": 993.921875,
+          "bottom": 490.46875
+        },
+        {
+          "x": 945.921875,
+          "y": 498.46875,
+          "width": 48,
+          "height": 48,
+          "right": 993.921875,
+          "bottom": 546.46875
+        },
+        {
+          "x": 945.921875,
+          "y": 554.46875,
+          "width": 48,
+          "height": 48,
+          "right": 993.921875,
+          "bottom": 602.46875
+        }
+      ],
+      "panels": [
+        {
+          "x": 0,
+          "y": 93.28125,
+          "width": 1440,
+          "height": 746.390625,
+          "right": 1440,
+          "bottom": 839.671875
+        },
+        {
+          "x": 0,
+          "y": 839.671875,
+          "width": 1440,
+          "height": 746.390625,
+          "right": 1440,
+          "bottom": 1586.0625
+        },
+        {
+          "x": 0,
+          "y": 1586.0625,
+          "width": 1440,
+          "height": 746.390625,
+          "right": 1440,
+          "bottom": 2332.453125
+        }
+      ]
+    }
+  ],
+  "playback": [
+    {
+      "duration": 60.067166,
+      "frames": 24,
+      "rate": 2,
+      "muted": true
+    },
+    {
+      "duration": 56.052993,
+      "frames": 20,
+      "rate": 2,
+      "muted": true
+    },
+    {
+      "duration": 63.808549,
+      "frames": 36,
+      "rate": 2,
+      "muted": true
+    }
+  ],
+  "errors": [],
+  "initialMedia": "Only active metadata eligible; inactive MP4s not requested",
+  "navigation": "Buttons, keyboard viewer-only, native wheel, scroll snap, boundary disabling and pause on change: PASS",
+  "reducedMotion": "PASS",
+  "failure": "Error message: PASS"
+}

@@ -1,0 +1,25 @@
+/* Shared episode reading modules. Native details work with keyboard and without JS. */
+.episode-deepen { border-block: 1px solid var(--color-border); scroll-margin-top: var(--space-3); }
+.episode-deepen .episode-section-heading h2 { max-width: 24ch; }
+.episode-deepen__grid { display: grid; gap: var(--space-3); align-items: start; }
+.episode-reading { min-width: 0; border: 1px solid var(--ink); background: var(--off-white); }
+.episode-reading:nth-child(even) { background: var(--fog); }
+.episode-reading summary { cursor: pointer; padding: var(--space-3); min-height: 48px; border-top: 5px solid var(--blue); }
+.episode-reading summary .label { display: block; margin-bottom: var(--space-2); }
+.episode-reading summary > span:last-child { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; line-height: 1.2; }
+.episode-reading[open] summary { border-bottom: 1px solid var(--ink); }
+.episode-reading__body { padding: var(--space-3); }
+.episode-deepen__question { margin-block: var(--space-4); font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; }
+.episode-deepen__sources { padding: var(--space-3); border-left: 5px solid var(--blue); }
+.episode-deepen__sources p, .episode-deepen__sources ul { margin-top: var(--space-3); }
+.episode-deepen__sources li + li { margin-top: var(--space-2); }
+.episode-deepen__sources .label { display: block; font-size: .6875rem; }
+.episode[data-episode=ciberacoso] .episode-cast__grid { grid-template-columns: minmax(0, 1fr); }
+.episode[data-episode=ciberacoso] .character-card__body > .label { margin: 0 0 var(--space-2); }
+@media (min-width: 48rem) {
+  .episode-deepen__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 64rem) {
+  .episode[data-episode=ciberacoso] .episode-cast__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .episode .episode-followup__links { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}

@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/topics.css">
   <link rel="stylesheet" href="css/resources.css">
   <script type="module" src="js/main.js"></script>
-  <script type="module" src="js/resources.js"></script>
+
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -27,76 +27,13 @@
         <a href="index.html">Inicio</a>
         <a href="sobre-nosotros.html">Sobre nosotros</a>
         <a href="problematicas.html">Problemáticas</a>
-        <a href="recursos.html" aria-current="page">Recursos</a>
+        <a href="shorts.html">Shorts</a>
         <a href="reflexiona.html">Reflexiona</a>
         <a href="contacto.html">Contacto</a>
       </nav>
     </div>
   </header>
-  <main class="library" id="contenido" tabindex="-1">
-    <section class="surface--dark section-shell library-hero" aria-labelledby="page-title">
-      <div class="container">
-        <p class="eyebrow">CHANGE LAB / ARCHIVO DE CONOCIMIENTO</p>
-        <div class="library-hero__layout">
-          <div><h1 id="page-title">La curiosidad no termina en un <span>video.</span></h1><p class="library-lead">Investiga, descubre y amplía tu perspectiva con recursos para comprender mejor las realidades que nos rodean.</p></div>
-          <div class="library-publications" aria-hidden="true">
-            <div class="publication publication--one"><span class="label">CL / SOCIEDAD</span><b>001</b><i></i><span class="publication__title">Mirar.<br>Comprender.</span></div>
-            <div class="publication publication--two"><span class="label">CL / CONSUMO</span><b>002</b><i></i><span class="publication__title">Reparar.<br>Repensar.</span></div>
-            <div class="publication publication--three"><span class="label">CL / DIGITAL</span><b>003</b><i></i><span class="publication__title">Conectar.<br>Respetar.</span></div>
-          </div>
-        </div>
-        <a class="library-hero__jump label" href="#biblioteca">ABRIR LA BIBLIOTECA <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a>
-      </div>
-    </section>
-
-    <section class="section-shell library-explorer" id="biblioteca" aria-labelledby="library-title">
-      <div class="container">
-        <header class="library-section-heading"><p class="eyebrow">ÍNDICE / FICHAS EDUCATIVAS</p><h2 id="library-title">Explora nuestro archivo.</h2></header>
-        <div class="archive-controls" id="resource-controls" hidden>
-          <div class="archive-search"><label for="resource-search">Buscar una ficha</label><div class="archive-search__field"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg><input type="search" id="resource-search" placeholder="Prueba con ropa, privacidad o comunidad" autocomplete="off" spellcheck="false" aria-controls="resource-grid" aria-describedby="resource-help"></div><p class="archive-help" id="resource-help">Busca por título o palabra clave y combina una categoría.</p></div>
-          <fieldset class="archive-filters"><legend class="label">Filtrar por temática</legend><div class="archive-filters__buttons">
-            <button type="button" data-resource-category="Todos" aria-pressed="true" aria-controls="resource-grid">Todos</button>
-            <button type="button" data-resource-category="Pandillaje" aria-pressed="false" aria-controls="resource-grid">Pandillaje</button>
-            <button type="button" data-resource-category="Fast fashion" aria-pressed="false" aria-controls="resource-grid">Fast fashion</button>
-            <button type="button" data-resource-category="Ciberacoso" aria-pressed="false" aria-controls="resource-grid">Ciberacoso</button>
-          </div></fieldset>
-          <button class="archive-reset" type="button" id="resource-reset" disabled>Restablecer búsqueda y filtros</button>
-        </div>
-        </div>
-    </section>
-    <section class="library-files" aria-labelledby="files-title">
-      <div class="container">
-        <div class="archive-results-bar"><h2 class="label" id="files-title">FICHAS EDUCATIVAS / 001—003</h2><p class="label" id="resource-status" role="status" aria-live="polite" aria-atomic="true">3 fichas</p></div>
-        <div class="library-grid" id="resource-grid">
-          <article class="card library-card" aria-labelledby="ficha-pandillaje-prevencion">
-            <div class="library-card__cover" data-cover="001" aria-hidden="true"><span class="library-card__number">001</span><span class="library-card__cut"></span><span class="label">CHANGE LAB / FICHA EDUCATIVA</span></div>
-            <div class="library-card__body"><p class="label">Pandillaje</p><h3 class="card__title" id="ficha-pandillaje-prevencion">Pandillaje y prevención juvenil</h3><p class="card__description">Comprender los factores que pueden influir en la violencia juvenil es fundamental para promover entornos seguros y oportunidades de prevención.</p><a class="text-link library-card__link" href="recursos/pandillaje-prevencion.html">Leer ficha completa<span class="library-sr-only">: Pandillaje y prevención juvenil</span> ↗</a></div>
-          </article>
-          <article class="card library-card" aria-labelledby="ficha-moda-rapida">
-            <div class="library-card__cover" data-cover="002" aria-hidden="true"><span class="library-card__number">002</span><span class="library-card__cut"></span><span class="label">CHANGE LAB / FICHA EDUCATIVA</span></div>
-            <div class="library-card__body"><p class="label">Fast fashion</p><h3 class="card__title" id="ficha-moda-rapida">El impacto de la moda rápida</h3><p class="card__description">La producción y el consumo acelerado de prendas generan preguntas importantes sobre sostenibilidad y condiciones laborales.</p><a class="text-link library-card__link" href="recursos/moda-rapida.html">Leer ficha completa<span class="library-sr-only">: El impacto de la moda rápida</span> ↗</a></div>
-          </article>
-          <article class="card library-card" aria-labelledby="ficha-convivencia-digital">
-            <div class="library-card__cover" data-cover="003" aria-hidden="true"><span class="library-card__number">003</span><span class="library-card__cut"></span><span class="label">CHANGE LAB / FICHA EDUCATIVA</span></div>
-            <div class="library-card__body"><p class="label">Ciberacoso</p><h3 class="card__title" id="ficha-convivencia-digital">Convivencia y seguridad digital</h3><p class="card__description">Las relaciones digitales también requieren respeto, empatía y responsabilidad.</p><a class="text-link library-card__link" href="recursos/convivencia-digital.html">Leer ficha completa<span class="library-sr-only">: Convivencia y seguridad digital</span> ↗</a></div>
-          </article>
-        </div>
-        <div class="archive-empty" id="resource-empty" hidden><span class="archive-empty__symbol" aria-hidden="true">∅</span><p>No encontramos recursos que coincidan con tu búsqueda.</p><p class="archive-help">Prueba otra palabra, cambia de categoría o restablece los filtros.</p></div>
-      </div>
-    </section>
-
-    <section class="surface--fog section-shell library-sources" aria-labelledby="sources-title">
-      <div class="container">
-        <header class="library-section-heading"><p class="eyebrow">LEER / CONTRASTAR / PROFUNDIZAR</p><h2 id="sources-title">Investigar también es parte del cambio.</h2></header>
-        <div class="library-sources__layout"><p class="library-sources__intro">Estos son portales institucionales generales para seguir investigando. Sus enlaces no son citas específicas ni validan automáticamente las afirmaciones de nuestras fichas.</p>
-          <ul class="institution-list"><li><a href="https://www.unicef.org/">UNICEF <span aria-hidden="true">↗</span></a><span class="label">PORTAL INSTITUCIONAL GENERAL</span></li><li><a href="https://www.unesco.org/">UNESCO <span aria-hidden="true">↗</span></a><span class="label">PORTAL INSTITUCIONAL GENERAL</span></li><li><a href="https://www.unep.org/">PNUMA <span aria-hidden="true">↗</span></a><span class="label">PORTAL INSTITUCIONAL GENERAL</span></li></ul>
-        </div>
-        <div class="specific-sources" data-resource-sources=""><h3>Referencias específicas</h3><p id="sources-pending" data-source-pending>Las referencias concretas de estas fichas están pendientes de selección y revisión editorial.</p><ul class="specific-sources__list" id="specific-sources" data-source-list hidden></ul></div>
-      </div>
-    </section>
-
-    <section class="surface--blue section-shell library-closing" aria-labelledby="closing-title"><div class="container"><p class="eyebrow">EL SIGUIENTE CAPÍTULO</p><h2 id="closing-title">El conocimiento crece cuando lo compartimos.</h2><div class="library-closing__bottom"><p>Sigue explorando las historias de Change Lab y descubre nuevas perspectivas sobre nuestra sociedad.</p><a class="button" href="problematicas.html">Explorar problemáticas <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div></div></section>
-  </main>
+  <main id="contenido" tabindex="-1"><section class="surface--dark section-shell"><div class="container"><p class="eyebrow">CHANGE LAB / NUEVA UBICACIÓN</p><h1>Los recursos ahora acompañan cada historia.</h1><p>Encuentra las fichas educativas, las preguntas de reflexión y los portales institucionales en la sección Profundiza de cada problemática.</p></div></section><section class="container section-shell" id="biblioteca" aria-label="Nuevas ubicaciones"><div class="library-grid"><article class="card library-card"><div class="library-card__body"><p class="label">001 / PROFUNDIZA</p><h2 class="card__title">Comprender para prevenir.</h2><a class="text-link" href="temas/pandillaje.html#profundiza">Profundiza en Pandillaje ↗</a></div></article><article class="card library-card"><div class="library-card__body"><p class="label">002 / PROFUNDIZA</p><h2 class="card__title">Lo que hay detrás de nuestra ropa.</h2><a class="text-link" href="temas/fast-fashion.html#profundiza">Profundiza en Fast Fashion ↗</a></div></article><article class="card library-card"><div class="library-card__body"><p class="label">003 / PROFUNDIZA</p><h2 class="card__title">Construyamos espacios digitales seguros.</h2><a class="text-link" href="temas/ciberacoso.html#profundiza">Profundiza en Ciberacoso ↗</a></div></article></div><div id="sources-title"><p>Las lecturas y referencias generales se conservan dentro de cada episodio. Las fuentes específicas siguen pendientes de revisión editorial.</p></div></section></main>
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>Change Lab — Desarrollado por The Nebula Society</p>

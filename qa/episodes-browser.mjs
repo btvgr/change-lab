@@ -12,7 +12,7 @@ const browser = await chromium.launch({channel:'chrome',headless:true});
 const origin = `http://127.0.0.1:${server.address().port}${prefix}`;
 const results = [];
 try {
-  for (const [slug, keys, count] of [['pandillaje',[0,1,2],4],['ciberacoso',[1,0,2],5],['fast-fashion',[1,0,2],4]]) {
+  for (const [slug, keys, count] of [['pandillaje',[0,1,2],4],['ciberacoso',[1,0,2],3],['fast-fashion',[1,0,2],4]]) {
     const page = await browser.newPage();
     const errors = [];
     page.on('pageerror', e=>errors.push(e.message));
@@ -29,6 +29,17 @@ try {
     await page.locator('video').evaluate(v=>v.pause());
     assert.equal(await page.locator('video').evaluate(v=>v.paused),true);
     assert.equal(await page.locator('.character-card').count(),count);
+    assert.deepEqual(await page.locator('.site-nav a').allTextContents(), ['Inicio','Sobre nosotros','Problemáticas','Shorts','Reflexiona','Contacto']);
+    assert.equal(await page.locator('#profundiza .episode-reading').count(),4);
+    assert.deepEqual(await page.locator('.episode-followup__links a').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('href'))), ['#ver-episodio','#comprende','#reflexiona','#profundiza','#actua']);
+    if (slug==='ciberacoso') assert.deepEqual(await page.locator('.character-card h3').allTextContents(),['Fresa','Uva','Plátano']);
+    for (const summary of await page.locator('.episode-reading summary').all()) {
+      await summary.focus(); await page.keyboard.press('Enter');
+      assert.equal(await summary.evaluate(n=>n.parentElement.open),true);
+      assert.ok(await summary.evaluate(n=>getComputedStyle(n).outlineStyle!=='none'));
+      await page.keyboard.press('Space');
+      assert.equal(await summary.evaluate(n=>n.parentElement.open),false);
+    }
     for (let i=0;i<3;i++) {
       const card = page.locator('.quiz-question').nth(i);
       await card.locator('button').click();
@@ -48,8 +59,14 @@ try {
       await page.evaluate(()=>document.fonts.ready);
       const layout=await page.evaluate(()=>({viewport:innerWidth,document:document.documentElement.scrollWidth,broken:[...document.images].filter(i=>i.complete&&(!i.naturalWidth)).map(i=>i.src)}));
       assert.ok(layout.document<=width,`${slug} desborde ${width}: ${layout.document}`); assert.deepEqual(layout.broken,[]);
+      await page.locator('.episode-cast').scrollIntoViewIfNeeded();
+      await page.waitForFunction(()=>[...document.querySelectorAll('.character-portrait img')].every(i=>i.complete&&i.naturalWidth>0));
+      if(slug==='ciberacoso') {
+        const columns = await page.locator('.episode-cast__grid').evaluate(n=>getComputedStyle(n).gridTemplateColumns.split(' ').length);
+        assert.equal(columns,width>=1024?3:1);
+      }
       responsive.push({width,...layout});
-      if(slug!=='fast-fashion') await page.screenshot({path:`qa/${slug}-${width}.png`,fullPage:true});
+      await page.screenshot({path:`qa/${slug}-${width}.png`,fullPage:true});
     }
     for(const href of await page.locator('a[href]').evaluateAll(nodes=>nodes.map(n=>n.href))) {
       const url=new URL(href);
@@ -61,6 +78,8 @@ try {
       await page.locator('.episode-dialogue summary').click(); assert.ok(await page.locator('.episode-dialogue').getAttribute('open')!==null);
     }
     assert.deepEqual(errors,[]);
+    await page.emulateMedia({reducedMotion:'reduce'});
+    assert.equal(await page.evaluate(()=>matchMedia('(prefers-reduced-motion: reduce)').matches),true);
     results.push({slug,before,playing,responsive,quiz:'vacío, error, acierto y reinicio: OK',navigation:'OK',errors});
     await page.close();
   }

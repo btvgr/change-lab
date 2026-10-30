@@ -40,7 +40,7 @@ Se inspeccionaron los 11 PNG originales; todos están conservados. No se generar
 | assets/episodios/ciberacoso/ | platano.png | 1254 × 1254 | 1 457 606 | Plátano |
 | assets/episodios/ciberacoso/ | uva.png | 1254 × 1254 | 1 847 415 | Uva |
 
-Las dos Peras se distinguen por los archivos y por su apariencia real. Mora y Manzana en Ciberacoso tienen tarjetas tipográficas con su papel en la historia y el aviso de retrato no disponible.
+Las dos Peras se distinguen por los archivos y por su apariencia real. Ciberacoso contiene únicamente Fresa, Uva y Plátano, con sus retratos originales. Mora y Uva se unifican como Uva; Manzana no forma parte de las tarjetas.
 
 ## Verificación
 
@@ -82,6 +82,6 @@ Los 11 PNG y los dos MP4 suministrados ya estaban en disco sin seguimiento de Gi
 
 ## Pendientes
 
-- Retratos oficiales de Mora y Manzana para Ciberacoso, si el equipo desea reemplazar sus tarjetas tipográficas.
+- Mantener únicamente los tres retratos originales de Fresa, Uva y Plátano en Ciberacoso.
 - Subtítulos WebVTT sincronizados y revisados para cada video.
 - Comprobación en Safari/iOS y dispositivos físicos, no disponibles en esta prueba de Chrome de escritorio.
