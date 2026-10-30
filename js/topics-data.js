@@ -5,7 +5,7 @@ export const topics = [
     label: 'Sociedad y comunidad',
     description: 'Comprende los factores que influyen en el pandillaje juvenil, sus consecuencias y la importancia de crear oportunidades de prevención y apoyo comunitario.',
     keywords: ['juventud', 'comunidad', 'prevención', 'convivencia'],
-    image: { src: '', alt: '' }, route: 'temas/pandillaje.html', plannedRoute: 'temas/pandillaje.html'
+    image: { src: 'assets/episodios/pandillaje/poster-pandillaje.png', alt: 'Póster oficial de Pandillaje con Manzana, Mamá Pera, Piña y Jefe Pera.', width: 1024, height: 1536 }, route: 'temas/pandillaje.html', plannedRoute: 'temas/pandillaje.html'
   },
   {
     id: '002', slug: 'fast-fashion', title: 'Fast fashion', category: 'Medio ambiente',
@@ -19,7 +19,7 @@ export const topics = [
     label: 'Convivencia digital',
     description: 'Aprende a reconocer las conductas de acoso en internet, comprender sus consecuencias y promover espacios digitales más seguros.',
     keywords: ['internet', 'redes sociales', 'convivencia', 'prevención'],
-    image: { src: '', alt: '' }, route: 'temas/ciberacoso.html', plannedRoute: 'temas/ciberacoso.html'
+    image: { src: 'assets/episodios/ciberacoso/poster-ciberacoso.png', alt: 'Póster oficial de Ciberacoso con Fresa, Uva y Plátano.', width: 1024, height: 1536 }, route: 'temas/ciberacoso.html', plannedRoute: 'temas/ciberacoso.html'
   }
 ];
 

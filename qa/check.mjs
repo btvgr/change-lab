@@ -39,7 +39,8 @@ await test('Rutas, anclas, IDs y un h1 en todos los HTML', async () => {
     assert.equal(new Set(ids).size, ids.length, file + ': IDs duplicados');
     for (const [, ref] of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
       if (/^(https?:|mailto:)/.test(ref)) continue;
-      const [filePath, fragment] = ref.split('#');
+      const [resourcePath, fragment] = ref.split('#');
+      const filePath = decodeURIComponent(resourcePath.split('?')[0]);
       const target = filePath ? path.resolve(path.dirname(file), filePath) : file;
       assert.ok(target.startsWith(root), 'Ruta fuera del proyecto');
       assert.ok(fileNames.has(path.relative(root, target)), file + ': nombre/ruta o mayúsculas incorrectos ' + ref);
@@ -95,7 +96,7 @@ await test('Búsqueda y filtros combinados de catálogo y Recursos', () => {
   for (const [items, query, category, expected] of cases) assert.deepEqual(filterTopics(items, query, category).map(item => item.id), expected);
 });
 await test('63 evaluaciones de los tres quizzes: claves, errores y vacíos', () => {
-  const keys = { pandillaje: [1,0,2], 'fast-fashion': [1,0,2], ciberacoso: [1,2,0] };
+  const keys = { pandillaje: [0,1,2], 'fast-fashion': [1,0,2], ciberacoso: [1,0,2] };
   for (const [slug, expected] of Object.entries(keys)) episodes[slug].questions.forEach((question, index) => {
     assert.equal(question.correct, expected[index]);
     for (let choice = 0; choice < 3; choice++) {

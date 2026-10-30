@@ -88,3 +88,7 @@
 .archive-art:has(.archive-image) .archive-art__number { top: var(--space-2); left: var(--space-2); font-size: 2.5rem; }
 .archive-art:has(.archive-image) .archive-art__caption { bottom: var(--space-2); left: var(--space-2); font-size: .625rem; }
 .archive-image-note { margin: 0; padding: var(--space-2) var(--space-3); font-size: .75rem; line-height: 1.5; border-bottom: 1px solid var(--color-border); }
+
+/* Los tres episodios ya disponen de póster oficial: encuadre completo y color original. */
+.archive-art:is([data-art=pandillaje], [data-art=ciberacoso]) .archive-image { padding: 0; filter: none; background: var(--off-white); }
+.archive-art:is([data-art=pandillaje], [data-art=ciberacoso]):has(.archive-image) > :not(.archive-image) { display: none; }

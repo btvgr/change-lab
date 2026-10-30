@@ -1,45 +1,50 @@
-﻿/** Rutas de medios relativas a la raíz del proyecto, sin barra inicial. */
+/** Rutas de medios relativas a la raíz. captions acepta un WebVTT real cuando esté disponible. */
 export const episodes = {
   pandillaje: {
-    title: 'Decisiones que marcan',
-    provisionalTitle: true,
-    media: { src: '', poster: '', captions: '', transcript: '' },
-    questions: [
-      {
-        id: 'riesgo',
-        prompt: '¿Cuál de estas situaciones puede aumentar el riesgo de involucrarse en conductas violentas?',
-        options: [
-          'Contar con adultos de confianza.',
-          'Sentir presión de un grupo para actuar contra los propios valores.',
-          'Participar en actividades recreativas seguras.'
-        ],
-        correct: 1,
-        explanation: 'La presión para actuar contra los propios valores puede aumentar el riesgo. Contar con personas de confianza y actividades seguras puede ofrecer apoyo.'
-      },
-      {
-        id: 'apoyo',
-        prompt: '¿Qué puede hacer una persona si siente presión para participar en una actividad peligrosa?',
-        options: [
-          'Buscar apoyo en una persona adulta de confianza.',
-          'Aceptar para no perder amistades.',
-          'Ignorar siempre sus propias preocupaciones.'
-        ],
-        correct: 0,
-        explanation: 'Buscar una persona adulta de confianza puede ayudar a expresar preocupaciones y encontrar alternativas seguras. No es necesario afrontar la presión a solas.'
-      },
-      {
-        id: 'prevencion',
-        prompt: '¿Qué ayuda a prevenir la violencia juvenil?',
-        options: [
-          'Estigmatizar a los jóvenes de ciertos barrios.',
-          'Excluir a quienes tienen dificultades.',
-          'Crear oportunidades educativas y espacios de apoyo.'
-        ],
-        correct: 2,
-        explanation: 'Las oportunidades educativas y las redes de apoyo contribuyen a la prevención. Estigmatizar o excluir dificulta la convivencia y el acceso al apoyo.'
-      }
-    ]
+  "title": "El precio del dinero fácil",
+  "provisionalTitle": false,
+  "media": {
+    "src": "assets/videos/pandillaje.mp4",
+    "poster": "assets/episodios/pandillaje/portada-pandillaje.png",
+    "captions": "",
+    "transcript": ""
   },
+  "questions": [
+    {
+      "id": "familia",
+      "prompt": "¿Por qué Manzana considera aceptar la propuesta de Piña?",
+      "options": [
+        "Porque busca ayudar a su familia ante las dificultades económicas.",
+        "Porque quiere abandonar a su madre.",
+        "Porque su escuela se lo exige."
+      ],
+      "correct": 0,
+      "explanation": "Manzana quiere ayudar a su familia. Pedir orientación puede ayudar a encontrar opciones seguras ante las dificultades económicas."
+    },
+    {
+      "id": "dinero",
+      "prompt": "¿Qué descubre Manzana sobre el dinero fácil?",
+      "options": [
+        "Que siempre es una solución segura.",
+        "Que puede implicar actividades incorrectas y riesgos.",
+        "Que no requiere tomar decisiones."
+      ],
+      "correct": 1,
+      "explanation": "Manzana descubre los riesgos detrás de la propuesta. Reconocerlos y poner límites es un paso para cuidarse y cuidar a los demás."
+    },
+    {
+      "id": "educacion",
+      "prompt": "¿Qué camino decide seguir Manzana al final?",
+      "options": [
+        "Continuar con las actividades incorrectas.",
+        "Abandonar sus estudios.",
+        "Alejarse de esas actividades y continuar su educación."
+      ],
+      "correct": 2,
+      "explanation": "Manzana se aleja de esas actividades y continúa sus estudios. La educación y las redes de apoyo pueden abrir nuevas posibilidades."
+    }
+  ]
+},
   'fast-fashion': {
     title: 'Detrás de la etiqueta',
     heroTitle: '¿Sabes qué hay detrás de lo que vistes?',
@@ -67,30 +72,48 @@ export const episodes = {
     ]
   },
   ciberacoso: {
-    title: 'Detrás de la pantalla',
-    heroTitle: 'Lo que sucede en internet también importa.',
-    provisionalTitle: true,
-    media: { src: '', poster: '', captions: '', transcript: '' },
-    questions: [
-      {
-        id: 'conductas', prompt: '¿Cuál de estas acciones puede constituir ciberacoso?',
-        options: ['Enviar un mensaje amable.', 'Humillar repetidamente a alguien mediante una plataforma digital.', 'Compartir material educativo.'],
-        correct: 1,
-        explanation: 'Humillar de forma repetida mediante una plataforma digital puede constituir ciberacoso. La convivencia digital requiere respeto.'
-      },
-      {
-        id: 'testigos', prompt: '¿Qué es recomendable hacer si presencias ciberacoso?',
-        options: ['Compartir el contenido ofensivo.', 'Sumarte a las burlas.', 'No difundirlo y buscar apoyo o reportarlo.'],
-        correct: 2,
-        explanation: 'No difundir el contenido evita amplificar el daño. Buscar apoyo o utilizar las herramientas de denuncia puede ayudar a actuar con responsabilidad.'
-      },
-      {
-        id: 'convivencia', prompt: '¿Qué contribuye a una convivencia digital saludable?',
-        options: ['Respetar a otras personas y su privacidad.', 'Compartir información personal sin permiso.', 'Difundir rumores.'],
-        correct: 0,
-        explanation: 'Respetar a las personas y su privacidad contribuye a una convivencia digital más segura. Compartir datos sin permiso o difundir rumores puede perjudicar a otros.'
-      }
-    ]
-  }
+  "title": "Detrás de cada pantalla",
+  "provisionalTitle": false,
+  "media": {
+    "src": "assets/videos/ciberacoso.mp4",
+    "poster": "assets/episodios/ciberacoso/portada-ciberacoso.png",
+    "captions": "",
+    "transcript": ""
+  },
+  "questions": [
+    {
+      "id": "permiso",
+      "prompt": "¿Qué hizo Uva que perjudicó a Fresa?",
+      "options": [
+        "La ayudó a proteger su cuenta.",
+        "Publicó imágenes de ella sin permiso para burlarse.",
+        "Le enseñó a editar fotografías."
+      ],
+      "correct": 1,
+      "explanation": "Uva publicó imágenes sin consentimiento para burlarse. Pedir permiso y respetar la privacidad ayuda a cuidar a otras personas."
+    },
+    {
+      "id": "acompanar",
+      "prompt": "¿Cómo ayuda Plátano a Fresa?",
+      "options": [
+        "La escucha, consuela y apoya.",
+        "Comparte las fotografías para que más personas las vean.",
+        "Ignora lo ocurrido."
+      ],
+      "correct": 0,
+      "explanation": "Plátano escucha y acompaña a Fresa. Dar apoyo y evitar compartir las burlas puede ayudar a quien está pasando por una situación de acoso."
+    },
+    {
+      "id": "respeto",
+      "prompt": "¿Qué enseñanza transmite la historia?",
+      "options": [
+        "Que todo lo publicado en internet es inofensivo.",
+        "Que las burlas digitales siempre son divertidas.",
+        "Que debemos respetar la privacidad y dignidad de otras personas."
+      ],
+      "correct": 2,
+      "explanation": "Detrás de cada pantalla hay una persona que merece respeto. Cuidar la privacidad y la dignidad hace posible una mejor convivencia digital."
+    }
+  ]
+}
 };
-

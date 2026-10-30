@@ -72,6 +72,12 @@ try {
   assert.equal(video.status, 206);
   assert.equal((await video.arrayBuffer()).byteLength, 32);
   assert.equal(video.headers.get('content-type'), 'video/mp4');
+  for (const slug of ['pandillaje', 'ciberacoso']) {
+    const response = await fetch(origin + prefix + `assets/videos/${slug}.mp4`, { headers: { Range: 'bytes=0-31' } });
+    assert.equal(response.status, 206);
+    assert.equal((await response.arrayBuffer()).byteLength, 32);
+    assert.equal(response.headers.get('content-type'), 'video/mp4');
+  }
   console.log('PASS servidor con subdirectorio, recursos incluidos y Range del MP4; máster inaccesible.');
 } finally {
   server.closeAllConnections();

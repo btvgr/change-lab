@@ -1,0 +1,46 @@
+/* Episodios 001 y 003. Mismo sistema editorial que el 002; sin alterar sus estilos. */
+.episode-premiere { padding-top: var(--space-4); }
+.episode-premiere .episode-hero__meta { align-items: center; margin-bottom: var(--space-5); }
+.premiere-stamp { padding: .65rem .85rem; background: var(--blue); color: var(--ink); }
+.premiere-category { margin-bottom: var(--space-3); color: var(--blue); }
+.episode-premiere h1 { max-width: 12ch; font-size: clamp(3.5rem, 1.6rem + 7vw, 8rem); line-height: .98; }
+.premiere-credit, .premiere-copy > .button { margin-top: var(--space-4); }
+.premiere-art { width: min(100%, 23rem); margin-block: var(--space-3); transform: rotate(2deg); text-decoration: none; border: 1px solid var(--fog); background: var(--off-white); color: var(--ink); }
+.premiere-art img { display: block; width: 100%; height: auto; object-fit: contain; }
+.premiere-art .episode-hero-art__note { padding: .65rem; text-align: left; border-top: 1px solid var(--ink); }
+.episode-followup { padding-block: var(--space-4); border-bottom: 1px solid var(--color-border); }
+.episode-followup__heading { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); justify-content: space-between; margin-bottom: var(--space-4); }
+.episode-followup__heading .eyebrow { margin: 0; }
+.episode-followup__heading p:last-child { max-width: 60ch; font-size: 1rem; }
+.episode-followup__links { display: grid; gap: var(--space-2); }
+.episode-followup__links a { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-2); min-height: 48px; padding: var(--space-3); border: 1px solid var(--ink); text-decoration: none; }
+.episode-followup__links a > .label { grid-column: 1 / -1; }
+.episode-followup__links a > span:not(.label) { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; line-height: 1.15; }
+.episode-followup__links a:hover { background: var(--blue); }
+.episode-cast { border-bottom: 1px solid var(--color-border); }
+.episode-cast__grid { display: grid; gap: var(--space-3); }
+.character-card { min-width: 0; padding: 0; border-radius: 0; overflow: hidden; }
+.character-portrait { position: relative; aspect-ratio: 1; background: var(--off-white); }
+.character-portrait img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.character-card__body { padding: var(--space-3); }
+.character-card__body p { font-size: 1rem; margin-top: var(--space-2); }
+.character-portrait--type { display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-3); background: var(--fog); border-bottom: 1px solid var(--ink); }
+.character-portrait__name { font-family: var(--font-display); font-size: clamp(2.75rem, 5vw, 4rem); font-weight: 900; line-height: 1; letter-spacing: -.04em; }
+.episode-dialogue { margin-top: var(--space-4); padding-block: var(--space-2); border-block: 1px solid var(--color-border); max-width: 48ch; font-size: 1rem; }
+.episode-dialogue summary { cursor: pointer; min-height: 44px; padding-block: .5rem; }
+.episode-dialogue p { margin-block: var(--space-2); }
+.episode-dialogue li + li { margin-top: var(--space-1); }
+.episode-media__caption + .episode-media__caption { margin-top: var(--space-2); }
+.episode-act h2 { max-width: 21ch; font-size: clamp(2.75rem, 1.4rem + 4vw, 5.5rem); font-weight: 900; }
+.episode-act__list { display: grid; gap: var(--space-3); list-style: none; margin: 0; padding: 0; }
+.episode-act__list li { padding: var(--space-3); border: 1px solid var(--ink); }
+.episode-act__list p { margin-top: var(--space-3); font-family: var(--font-display); font-size: clamp(1.375rem, 1rem + .8vw, 1.75rem); font-weight: 800; line-height: 1.2; }
+.episode :is(#ver-episodio, #comprende, #reflexiona, #actua) { scroll-margin-top: var(--space-3); }
+@media (min-width: 40rem) {
+  .episode-cast__grid, .episode-act__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 64rem) {
+  .episode-followup__links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .episode-act__list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (min-width: 80rem) { .episode-cast__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
